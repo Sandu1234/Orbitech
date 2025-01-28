@@ -1,0 +1,1183 @@
+/* Define Astro Soft font locally */
+@font-face {
+    font-family: 'Astro Soft';
+    src: url('./fonts/astro-soft/fonnts.com-New_Astro_Soft_Regular.otf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Astro Soft';
+    src: url('./fonts/astro-soft/fonnts.com-New_Astro_Soft_Medium.otf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  /* CSS Variables */
+  :root {
+    --primary-bg: #000000;
+    --primary-text: #ffffff;
+  }
+  
+  /* Reset and Global Styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Astro Soft', sans-serif;
+  }
+  
+  body {
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+    line-height: 1.6;
+    cursor: none;
+
+  }
+
+/* Ensure interactive elements also hide the default cursor */
+a, button, input, textarea {
+    cursor: none !important; /* Ensure no default cursor */
+    pointer-events: all; /* Retain clickability */
+  }
+  
+  /* Custom cursor */
+  .custom-cursor {
+    position: fixed;
+    width: 30px; /* Default size */
+    height: 30px;
+    border: 2px solid #fff; /* White stroke */
+    border-radius: 50%;
+    pointer-events: none; /* Ensure the custom cursor is not clickable */
+    z-index: 9999;
+    transition: transform 0.2s ease, opacity 0.2s ease; /* Smooth movement and scaling */
+  }
+  /* Header Styles */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--primary-bg);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .logo {
+    font-size: 2.0rem;
+    font-weight: bold;
+    color: var(--primary-text);
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-links a {
+    color: var(--primary-text);
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #bbbbbb;
+  }
+  
+  .header-button button {
+    background: transparent;
+    color: var(--primary-text);
+    border: 2px solid var(--primary-text);
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    font-family: 'Astro Soft', sans-serif;
+    border-radius: 0 0 20px 20px; /* Top corners: 0, Bottom corners: 10px */
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  
+  .header-button button:hover {
+    background-color: var(--primary-text);
+    color: var(--primary-bg);
+  }
+  
+/* Hero Section Styles */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    background-color: #000000;
+    overflow: hidden;
+  }
+  
+  .hero-overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 22vw; /* Scale the font size relative to viewport width */
+    font-family: 'Astro Soft', sans-serif;
+    color: #ffffff;
+    position: relative;
+    z-index: 3;
+    display: flex; /* Treat spans as a continuous line */
+    margin: 0; /* Remove any default margin */
+    top: 25%;
+  }
+  
+  .hero-content h1 .bold,
+  .hero-content h1 .outline {
+    display: inline-block;
+  }
+  
+  .hero-content .bold {
+    font-weight: 700;
+  }
+  
+  .hero-content .outline {
+    font-weight: 400;
+    color: transparent;
+    -webkit-text-stroke: 2px #ffffff;
+  }
+  
+  .circle-container {
+    position: absolute;
+    bottom: 10%; /* Adjust to fit within the hero section */
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1; /* Behind text but in front of background */
+  }
+  
+  .circle {
+    width: 40vw; /* Circle size relative to viewport width */
+    height: 40vw;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  
+  .hero-image {
+    position: relative;
+    z-index: 2; /* In front of the circle but behind the text */
+    width: 35vw; /* Adjust image size relative to viewport width */
+    height: auto;
+    max-height: 40%; /* Ensure the image fits within the section */
+  }
+  
+  .social-icons {
+    position: absolute;
+    left: 2rem;
+    top: 30%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    z-index: 2;
+  }
+  
+  .social-icons a {
+    color: #ffffff;
+    font-size: 1.0rem;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #bbbbbb;
+  }
+  
+  .rotated-text {
+    position: absolute;
+    top: 20%; /* Align to the top */
+    right: 5%; /* Align to the right */
+    transform: translate(50%, -50%) rotate(90deg); /* Slight adjustment for better positioning */
+    font-size: 2.5rem;
+    font-family: 'Astro Soft', sans-serif;
+    color: #ffffff;
+    z-index: 2;
+    padding: 1rem; /* Add padding to give space from edges */
+  }
+  /* Info Section Styles */
+.info-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000; /* Black background */
+    padding: 4rem 2rem; /* Add spacing for section */
+    color: #fff; /* White text */
+    text-align: center;
+  }
+  
+  .info-container h2 {
+    font-size: 2rem; /* Adjust as needed */
+    font-weight: 700;
+    font-family: 'Astro Soft', sans-serif;
+    margin-bottom: 0.5rem; /* Spacing between elements */
+  }
+  
+  .info-button {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-family: 'Astro Soft', sans-serif;
+    cursor: pointer;
+    border-radius: 0 0 20px 20px; /* Bottom corners rounded */
+    transition: all 0.3s ease;
+  }
+  
+  .info-button:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* Features Section Styles */
+.features-section {
+    padding: 4rem 2rem;
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .features-section h2 {
+    font-size: 2.5rem;
+    font-family: 'Astro Soft', sans-serif;
+    margin-bottom: 2rem;
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 300px); /* Fixed column width */
+    justify-content: center; /* Center the grid horizontally */
+    gap: 1rem; /* Reduce the space between grid items */
+    margin: 0 auto; /* Center the section */
+    padding: 2rem 0; /* Add vertical spacing */
+  }
+  
+  .feature-box {
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 300px; /* Fixed width */
+  }
+  
+  
+  .feature-box:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+  }
+  
+  .feature-box i {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-box h3 {
+    font-size: 1.5rem;
+    font-family: 'Astro Soft', sans-serif;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-box p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .features-grid {
+      grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+  }
+
+/* Marquee Section */
+.marquee-section {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Hide overflowing text */
+    background-color: #000; /* Black background */
+  }
+  
+  .marquee {
+    display: inline-block;
+    width: 200%; /* Double the width for seamless looping */
+    animation: marquee-loop 10s linear infinite; /* Smooth scrolling animation */
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+  
+  .marquee span {
+    font-size: 10rem;
+    font-family: 'Astro Soft', sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 1px #ffffff; /* Creates outlined text effect */
+    display: inline-block;
+  }
+  
+  /* Animation for seamless scrolling */
+  @keyframes marquee-loop {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%); /* Move left by half the width */
+    }
+  }
+  
+  /* FAQ Section Styles */
+.faq-section {
+    background-color: #000;
+    color: #fff;
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .faq-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    max-width: 100%; /* Ensure it spans the full width */
+    width: 100%; /* No restrictions */
+  }
+  
+  
+  .faq-content {
+    flex: 1;
+  }
+  
+  .faq-content h2 {
+    font-size: 3rem;
+    font-family: 'Astro Soft', sans-serif;
+    margin-bottom: 1rem;
+  }
+  
+  .faq-content p {
+    font-size: 1rem;
+    font-family: 'Astro Soft', sans-serif;
+    margin-bottom: 2rem;
+  }
+  
+  .faq-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .faq-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+  }
+  
+  .faq-number {
+    font-size: 2rem;
+    font-family: 'Astro Soft', sans-serif;
+    font-weight: 700;
+    margin-right: 1rem;
+    transform: translateY(-50%) rotate(-90deg);
+
+  }
+
+  .faq-text h3 {
+    font-size: 1.5rem;
+    font-family: 'Astro Soft', sans-serif;
+    margin-bottom: 0.5rem;
+  }
+  
+  .faq-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .faq-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; /* Push the image to the right */
+    align-items: center;
+  }
+  
+  .faq-image img {
+    width: 100%; /* Adjust width percentage for larger size */
+    max-width: none; /* Disable any default max-width restrictions */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0; /* No spacing around the image */
+    padding: 0;
+    border-radius: 10px; /* Keep rounded corners */
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .faq-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .faq-image {
+      margin-top: 2rem;
+    }
+  }
+  
+  /* Latest Blogs Section */
+.latest-blogs {
+    background-color: #000;
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .blogs-header h2 {
+    font-size: 3rem;
+    font-family: 'Astro Soft', sans-serif;
+    margin-bottom: 1rem;
+  }
+  
+  .blogs-header p {
+    font-size: 1rem;
+    font-family: 'Astro Soft', sans-serif;
+    margin-bottom: 2rem;
+  }
+  
+  /* Blogs Carousel */
+.blogs-carousel {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 400px; /* Adjust based on your design */
+  }
+  
+  .blog-card {
+    width: 80%; /* Make the card smaller than the full width */
+    height: 350px; /* Set a fixed height */
+    margin: 0 auto; /* Center the card horizontally */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, #a0a0a0, #000);
+    border: 2px solid #fff; /* White outline */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden;
+    opacity: 0;
+  transform: translateX(100%);
+  position: absolute;
+  transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.4, 0, 0.2, 1); /* Smoother easing function */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Subtle shadow for visibility */
+  }
+  
+  
+  .blog-content {
+    flex: 1;
+    padding: 1rem; /* Reduce padding to fit smaller card */
+    text-align: left;
+  }
+  
+  .blog-content h3 {
+    font-size: 1.5rem; /* Adjust font size */
+    font-family: 'Astro Soft', sans-serif;
+    margin-bottom: 0.5rem;
+  }
+  
+  .blog-content p {
+    font-size: 1rem; /* Adjust font size */
+    line-height: 1.5; /* Adjust line height for better readability */
+  }
+  
+  .blog-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .blog-image img {
+    max-width: 100%; /* Scale the image down to fit within the card */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+  }
+  
+  
+  .carousel-dots {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .carousel-dots .dot {
+    width: 10px;
+    height: 10px;
+    background: #666;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+ /* Active dot */
+.carousel-dots .dot.active {
+    background-color: #ffffff; /* Highlight active dot */
+    transition: background-color 0.3s ease; /* Smooth transition for active dot */
+  }
+  
+  /* Testimonials Section */
+.testimonials-section {
+    background-color: #000;
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .testimonials-header h2 {
+    font-size: 3rem;
+    font-family: 'Astro Soft', sans-serif;
+    margin-bottom: 1rem;
+  }
+  
+  .testimonials-header p {
+    font-size: 1rem;
+    font-family: 'Astro Soft', sans-serif;
+    margin-bottom: 3rem;
+  }
+  
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 2rem; /* Space between cards */
+    justify-items: center;
+  }
+  
+  .testimonial-card {
+    background: linear-gradient(to bottom, #a0a0a0, #000);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    width: 300px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+  }
+  
+  .testimonial-card:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+  }
+  
+  .testimonial-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .stars span {
+    font-size: 1.2rem;
+    color: #ffd700; /* Gold color for stars */
+  }
+  
+  .testimonial-text {
+    font-size: 1rem;
+    margin: 1rem 0;
+    font-style: italic;
+  }
+  
+  .testimonial-author {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .testimonial-author .name {
+    font-weight: bold;
+  }
+  
+  .testimonial-author .company {
+    font-weight: 300;
+    color: #ccc;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .testimonials-grid {
+      grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+  
+    .testimonial-card {
+      width: 90%; /* Adjust card size for smaller screens */
+    }
+  }
+  
+  /* Footer Styles */
+/* Footer Section */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px; /* Adjust height to match the design */
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .footer-left {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .footer-left i {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .footer-left i:hover {
+    color: #ccc;
+  }
+  
+  .footer-center {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .footer-center button {
+    background: none;
+    color: #fff;
+    font-family: 'Astro Soft', sans-serif;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .footer-center button:hover {
+    color: #ccc;
+  }
+  
+  .footer-right h3 {
+    font-family: 'Astro Soft', sans-serif;
+    font-size: 1.5rem;
+    text-align: right;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+    }
+  
+    .footer-left,
+    .footer-center,
+    .footer-right {
+      justify-content: center;
+    }
+  }
+
+  
+  /* About Page Hero Section */
+/* About Page Hero Section */
+.about-hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .hero-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  /* .rotated-text {
+    position: absolute;
+    top: 10%;
+    left: 2%;
+    transform: rotate(-90deg);
+    font-size: 2rem;
+    font-family: 'Astro Soft', sans-serif;
+    color: #fff;
+  } */
+  
+  .orbitech-text {
+    position: absolute;
+    font-size: 25rem; /* Adjust size as needed */
+    font-family: 'Astro Soft', sans-serif;
+    font-weight: 400;
+    color: transparent;
+    -webkit-text-stroke: 2px #fff; /* Outline the text */
+    opacity: 0.3; /* Make it appear faint behind the image */
+    z-index: 0; /* Ensure it's behind the image and circle */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap; /* Prevent text from wrapping */
+  }
+  
+  .hero-image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; /* Place the image above the text */
+  }
+  
+  .circle {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    z-index: 1; /* Behind the image but above the text */
+  }
+  
+  .about-hero .hero-image {
+    position: relative;
+    z-index: 2;
+    max-width: 400px;
+    height: auto;
+    top: 40% !important;
+  }
+  
+  .contact-button-container {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+  }
+  
+  .contact-button {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    font-family: 'Astro Soft', sans-serif;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .contact-button:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* Stats Section */
+.stats-section {
+    background: linear-gradient(to bottom, #222, #000); /* Add gradient background */
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: -60px; /* Move the section slightly upward */
+    position: relative; /* Ensure it doesn’t overlap unintentionally */
+    z-index: 2; /* Keep it above other sections if needed */
+  }
+  
+  .stats-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; /* Space between items */
+  }
+  
+  .stat-item {
+    text-align: center;
+  }
+  
+  .stat-item h1 {
+    font-size: 3rem; /* Adjust number size */
+    font-family: 'Astro Soft', sans-serif;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .stat-item p {
+    font-size: 1rem;
+    font-family: 'Astro Soft', sans-serif;
+    margin: 0;
+  }
+  
+  .divider {
+    width: 1px;
+    height: 50px; /* Adjust divider height */
+    background-color: #fff;
+    opacity: 0.5; /* Slightly faded divider */
+  }
+  
+  /* Vision and Mission Section */
+.vision-mission-section {
+    background-color: #000;
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  .section-item {
+    margin: 0 auto;
+    max-width: 800px; /* Limit the width for better readability */
+  }
+  
+  .section-item h2 {
+    font-size: 3rem;
+    font-family: 'Astro Soft', sans-serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .section-item p {
+    font-size: 1.2rem;
+    font-family: 'Astro Soft', sans-serif;
+    line-height: 1.6;
+  }
+
+  /* Service Hero Section */
+.service-hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .hero-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+/*   
+  .rotated-text {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    transform: rotate(-90deg);
+    font-size: 2rem;
+    font-family: 'Astro Soft', sans-serif;
+    color: #fff;
+  } */
+  
+  .orbitech-text {
+    position: absolute;
+    font-size: 25rem; /* Adjust size as needed */
+    font-family: 'Astro Soft', sans-serif;
+    font-weight: 400;
+    color: transparent;
+    -webkit-text-stroke: 2px #fff; /* Outline the text */
+    opacity: 0.3; /* Make it appear faint behind the image */
+    z-index: 0; /* Ensure it's behind the image and circle */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap; /* Prevent text from wrapping */
+  }
+  
+  .hero-image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; /* Place the image above the text */
+  }
+  
+  .service-hero .circle {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    z-index: 1; /* Behind the image but above the text */
+    top: 40%;
+  }
+  
+  .service-hero .hero-image {
+    position: relative;
+    z-index: 2;
+    max-width: 800px; /* Increase the image size */
+    height: auto;
+    top: 30%;
+    transform: scale(1.2); /* Optional: Increase the size proportionally */
+  }
+  
+  
+  .contact-button-container {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+  }
+  
+  .contact-button {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    font-family: 'Astro Soft', sans-serif;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .contact-button:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* Pricing Section */
+.pricing-section {
+    background-color: #000;
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .pricing-header h2 {
+    font-family: 'Astro Soft', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .pricing-header p {
+    font-family: 'Astro Soft', sans-serif;
+    font-size: 1.2rem;
+    color: #bbb;
+    margin-bottom: 2rem;
+  }
+  
+  .pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .pricing-card {
+    background-color: #111;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    width: 300px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+    position: relative;
+  }
+  
+  .pricing-card.featured {
+    border: 2px solid #fff;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.3);
+  }
+  
+  .pricing-card h3 {
+    font-family: 'Astro Soft', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .pricing-card p {
+    font-family: 'Astro Soft', sans-serif;
+    font-size: 1rem;
+    color: #bbb;
+    margin-bottom: 1.5rem;
+  }
+  
+  .price h1 {
+    font-family: 'Astro Soft', sans-serif;
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .price span {
+    font-size: 1rem;
+    color: #bbb;
+  }
+  
+  .pricing-button {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    font-family: 'Astro Soft', sans-serif;
+    cursor: pointer;
+    margin: 1rem 0;
+    transition: all 0.3s ease;
+  }
+  
+  .pricing-button:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .features-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    text-align: left;
+  }
+  
+  .features-list li {
+    font-family: 'Astro Soft', sans-serif;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .features-list li:before {
+    content: "●";
+    color: #fff;
+    margin-right: 0.5rem;
+  }
+  
+  .features-list li.disabled {
+    color: #555;
+  }
+  
+  .features-list li.disabled:before {
+    content: "×";
+    color: #555;
+  }
+  
+  /* Projects Section */
+.projects-section {
+    padding: 2rem;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .project-card {
+    background-color: #111;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.7);
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .project-content {
+    padding: 1.5rem;
+    text-align: left;
+  }
+  
+  .project-content .category {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #ccc;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  .project-content h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0 1rem;
+  }
+  
+  .project-content p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    color: #aaa;
+  }
+  
+  .author-details {
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    color: #888;
+  }
+  
+  .author-details .author {
+    font-weight: bold;
+  }
+  
+  .author-details .date {
+    font-style: italic;
+  }
+  
+  .load-more {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 2rem;
+    transition: background-color 0.3s;
+  }
+  
+  .load-more:hover {
+    background-color: #ccc;
+    color: #000;
+  }
+  
