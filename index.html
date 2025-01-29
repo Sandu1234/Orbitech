@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Black Theme Website</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <!-- GSAP Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -20,8 +24,9 @@
         <a href="packages.html">Packages</a>
       </nav>
       <div class="header-button">
-        <button>Contact Us</button>
-      </div>
+        <a href="contact.html">
+          <button>Contact Us</button>
+      </a>      </div>
     </div>
   </header>
   <section class="hero">
@@ -49,44 +54,44 @@
 
   <section class="info-section">
     <div class="info-container">
-      <h2>Using Trending Technologies We Develop The Best Applications.</h2>
-      <h2>With Our Best Experts, We Will Help You And Make Your Business Easier!</h2>
+      <h2>Welcome to Orbitech – Where Innovation Meets Excellence!</h2>
+      <h2>Let’s innovate, create, and transform the digital landscape together!</h2>
       <button class="info-button">Contact Us</button>
     </div>
   </section>
   
   <section class="features-section">
-    <h2>What we can build for you</h2>
+    <h2>Future-Ready Solutions We Build</h2>
     <div class="features-grid">
       <div class="feature-box">
         <i class="fas fa-headphones"></i>
-        <h3>Support</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.</p>
+        <h3>Intelligent Software Solutions </h3>
+        <p>LTransform your vision into reality with innovative software tailored to elevate your business. Our solutions integrate cutting-edge technology with scalability for tomorrow’s challenges.</p>
       </div>
       <div class="feature-box">
         <i class="fas fa-chart-line"></i>
-        <h3>Sales</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.</p>
+        <h3>Immersive Web Experiences </h3>
+        <p>Design and develop future-ready websites that captivate, engage, and deliver seamless user experiences. Your online presence will inspire trust and drive growth.</p>
       </div>
       <div class="feature-box">
         <i class="fas fa-file-alt"></i>
-        <h3>Onboarding</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.</p>
+        <h3>Next-Gen UI/UX Designs </h3>
+        <p>Empower your brand with visually stunning and intuitive interfaces. Our designs blend creativity with functionality, ensuring your users stay engaged in every interaction.</p>
       </div>
       <div class="feature-box">
         <i class="fas fa-box"></i>
-        <h3>Product</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.</p>
+        <h3>Smart Mobile Applications </h3>
+        <p>Build powerful, futuristic apps that redefine mobility. From idea to execution, we develop apps that deliver exceptional user experiences on every device.</p>
       </div>
       <div class="feature-box">
         <i class="fas fa-star"></i>
-        <h3>Quality</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.</p>
+        <h3>Innovative Digital Consulting </h3>
+        <p>Chart your path to success with expert advice. We guide you in adopting the latest trends and technologies, ensuring your business thrives in a competitive digital world.</p>
       </div>
       <div class="feature-box">
         <i class="fas fa-sync-alt"></i>
-        <h3>Result</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.</p>
+        <h3>Revolutionary Product Development </h3>
+        <p>Go beyond the ordinary with innovative products designed to solve real-world problems and create lasting impacts. Together, we’ll shape the future of technology.</p>
       </div>
     </div>
   </section>
@@ -100,77 +105,117 @@
   <section class="faq-section">
     <div class="faq-container">
       <div class="faq-content">
-        <h2>Mostly asked ones</h2>
-        <p>Using Trending Technologies We Develop The Best Applications.</p>
+        <h2>Have Questions? We’ve Got Answers</h2>
+        <p>Curiosity Meets Clarity – Your Questions, Our Answers!</p>
         <ul class="faq-list">
           <li>
             <div class="faq-number">01</div>
             <div class="faq-text">
-              <h3>Using Trending Technologies</h3>
-              <p>We Develop The Best Applications. Using Trending Technologies We Develop The Best Applications.</p>
+              <div class="faq-top-line"></div>
+
+              <h3>What services does Orbitech offer?</h3>
+              <p>Orbitech specializes in Software Development & Consultation, Web Design & Consultation, UI/UX Design, Mobile App Development, and innovative product development to transform your ideas into reality.</p>
+              <div class="faq-bottom-line"></div>
+
             </div>
           </li>
           <li>
             <div class="faq-number">02</div>
             <div class="faq-text">
-              <h3>Using Trending Technologies</h3>
-              <p>We Develop The Best Applications. Using Trending Technologies We Develop The Best Applications.</p>
+              <div class="faq-top-line"></div>
+
+              <h3>How does Orbitech approach innovative product development?</h3>
+              <p>We combine creativity, the latest technologies, and market insights to design and deliver products that address real-world challenges and foster growth for businesses.</p>
+              <div class="faq-bottom-line"></div>
+
             </div>
           </li>
           <li>
             <div class="faq-number">03</div>
             <div class="faq-text">
-              <h3>Using Trending Technologies</h3>
-              <p>We Develop The Best Applications. Using Trending Technologies We Develop The Best Applications.</p>
+              <div class="faq-top-line"></div>
+
+              <h3>Can I get a consultation before starting a project?</h3>
+              <p>Absolutely! We offer expert consultations to understand your business needs, define objectives, and craft a strategic roadmap for your project.</p>
+              <div class="faq-bottom-line"></div>
+
             </div>
           </li>
           <li>
             <div class="faq-number">04</div>
             <div class="faq-text">
-              <h3>Using Trending Technologies</h3>
-              <p>We Develop The Best Applications. Using Trending Technologies We Develop The Best Applications.</p>
+              <div class="faq-top-line"></div>
+
+              <h3>What industries do you work with?</h3>
+              <p>We work with a diverse range of industries, including healthcare, finance, education, retail, and more, ensuring solutions are tailored to meet your unique needs.</p>
+              <div class="faq-bottom-line"></div>
+
             </div>
           </li>
           <li>
             <div class="faq-number">05</div>
             <div class="faq-text">
-              <h3>Using Trending Technologies</h3>
-              <p>We Develop The Best Applications. Using Trending Technologies We Develop The Best Applications.</p>
+              <div class="faq-top-line"></div>
+
+              <h3>Do you provide ongoing support after project delivery?</h3>
+              <p>Yes, we provide post-launch support and maintenance to ensure your product stays up-to-date, secure, and optimized for success.</p>
+              <div class="faq-bottom-line"></div>
+
             </div>
           </li>
           <li>
             <div class="faq-number">06</div>
             <div class="faq-text">
+              <div class="faq-top-line"></div>
+
               <h3>Using Trending Technologies</h3>
               <p>We Develop The Best Applications. Using Trending Technologies We Develop The Best Applications.</p>
+              <div class="faq-bottom-line"></div>
+
             </div>
           </li>
           <li>
-            <div class="faq-number">06</div>
+            <div class="faq-number">07</div>
             <div class="faq-text">
-              <h3>Using Trending Technologies</h3>
-              <p>We Develop The Best Applications. Using Trending Technologies We Develop The Best Applications.</p>
+              <div class="faq-top-line"></div>
+
+              <h3>What makes Orbitech different from other digital solution providers?</h3>
+              <p>At Orbitech, we focus on innovation, user-centric designs, and cutting-edge technology, delivering not just solutions but experiences that drive results.</p>
+              <div class="faq-bottom-line"></div>
+
             </div>
           </li>
           <li>
-            <div class="faq-number">06</div>
+            <div class="faq-number">08</div>
             <div class="faq-text">
-              <h3>Using Trending Technologies</h3>
-              <p>We Develop The Best Applications. Using Trending Technologies We Develop The Best Applications.</p>
+              <div class="faq-top-line"></div>
+
+              <h3>How long does it take to complete a project?</h3>
+              <p>The timeline depends on the project’s complexity and scope. During the consultation phase, we provide a detailed project timeline to ensure transparency.</p>
+              <div class="faq-bottom-line"></div>
+
             </div>
           </li>
           <li>
-            <div class="faq-number">06</div>
+            <div class="faq-number">09</div>
             <div class="faq-text">
-              <h3>Using Trending Technologies</h3>
-              <p>We Develop The Best Applications. Using Trending Technologies We Develop The Best Applications.</p>
+              <div class="faq-top-line"></div>
+
+              <h3>Can you help improve an existing website or app?</h3>
+              <p>Yes, we can enhance your existing website or app by optimizing performance, improving design, and adding new features tailored to your needs.</p>
+              <div class="faq-bottom-line"></div>
+
             </div>
           </li>
           <li>
-            <div class="faq-number">06</div>
+            <div class="faq-number">10</div>
             <div class="faq-text">
-              <h3>Using Trending Technologies</h3>
-              <p>We Develop The Best Applications. Using Trending Technologies We Develop The Best Applications.</p>
+              <div class="faq-top-line"></div>
+
+              <h3>Do you work with startups and small businesses?</h3>
+              <p>Absolutely! We are passionate about empowering startups and small businesses by providing innovative solutions that fit their budgets and goals.</p>
+              <div class="faq-bottom-line"></div>
+
             </div>
           </li>
         </ul>
@@ -183,8 +228,8 @@
   
   <section class="latest-blogs">
     <div class="blogs-header">
-      <h2>Latest Blogs</h2>
-      <p>Using Trending Technologies We Develop The Best Applications.</p>
+      <h2>The Orbitech Knowledge Hub</h2>
+      <p>Explore the cutting edge of technology and innovation with our latest blogs. From expert tips to groundbreaking trends, our articles are crafted to keep you informed, inspired, and ahead of the curve.</p>
       
     </div>
     <div class="blogs-carousel">
@@ -234,8 +279,8 @@
 
   <section class="testimonials-section">
     <div class="testimonials-header">
-      <h2>Testimonials</h2>
-      <p>Using Trending Technologies We Develop The Best Applications.</p>
+      <h2>Voices of Trust</h2>
+      <p>Don’t just take our word for it – hear from those who’ve experienced the Orbitech difference. From startups to enterprises, our clients share their stories of success, trust, and innovation.</p>
     </div>
     <div class="testimonials-grid">
       <!-- Testimonial Card 1 -->
@@ -282,18 +327,21 @@
     <div class="footer-container">
       <!-- Left Icons -->
       <div class="footer-left">
-        <i class="fas fa-search"></i>
-        <i class="fas fa-search"></i>
-        <i class="fas fa-search"></i>
-        <i class="fas fa-search"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin-in"></i>
+        <i class="fas fa-phone"></i>
+        <i class="fas fa-envelope"></i>
       </div>
   
       <!-- Center Buttons -->
       <div class="footer-center">
-        <button>Button</button>
-        <button>Button</button>
-        <button>Button</button>
-        <button>Button</button>
+        <button>Home</button>
+        <button>About Us</button>
+        <button>Projects</button>
+        <button>Services</button>
+        <button>Packages</button>
+        <button>Contact Us</button>
       </div>
   
       <!-- Right Logo -->
@@ -306,5 +354,7 @@
   
   
   <script src="script.js"></script>
+  <script src="animations.js" defer></script>
+
 </body>
 </html>

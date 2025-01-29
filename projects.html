@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Black Theme Website</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <!-- GSAP Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -20,8 +24,9 @@
         <a href="packages.html">Packages</a>
       </nav>
       <div class="header-button">
-        <button>Contact Us</button>
-      </div>
+        <a href="contact.html">
+          <button>Contact Us</button>
+      </a>      </div>
     </div>
   </header>
 
@@ -32,9 +37,7 @@
         <div class="circle"></div>
         <img src="./images/about.png" alt="About Hero" class="hero-image">
       </div>
-      <div class="contact-button-container">
-        <button class="contact-button">Contact Us</button>
-      </div>
+      
     </div>
   </section>
 
@@ -160,18 +163,21 @@
     <div class="footer-container">
       <!-- Left Icons -->
       <div class="footer-left">
-        <i class="fas fa-search"></i>
-        <i class="fas fa-search"></i>
-        <i class="fas fa-search"></i>
-        <i class="fas fa-search"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin-in"></i>
+        <i class="fas fa-phone"></i>
+        <i class="fas fa-envelope"></i>
       </div>
   
       <!-- Center Buttons -->
       <div class="footer-center">
-        <button>Button</button>
-        <button>Button</button>
-        <button>Button</button>
-        <button>Button</button>
+        <button>Home</button>
+        <button>About Us</button>
+        <button>Projects</button>
+        <button>Services</button>
+        <button>Packages</button>
+        <button>Contact Us</button>
       </div>
   
       <!-- Right Logo -->
@@ -183,6 +189,9 @@
   
   
   
+  
   <script src="script.js"></script>
+  <script src="animations.js" defer></script>
+
 </body>
 </html>

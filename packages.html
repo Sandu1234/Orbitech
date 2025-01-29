@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Black Theme Website</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <!-- GSAP Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -20,75 +24,78 @@
         <a href="packages.html">Packages</a>
       </nav>
       <div class="header-button">
-        <button>Contact Us</button>
-      </div>
+        <a href="contact.html">
+          <button>Contact Us</button>
+      </a>      </div>
     </div>
   </header>
 
   <section class="pricing-section">
     <div class="pricing-header">
-      <h2>Powerful Features for Powerful Creators</h2>
-      <p>Choose a plan that's right for you</p>
+      <h2>Tailored Solutions for Every Need</h2>
+      <p>Choose the perfect plan that fits your goals. At Orbitech, our packages are designed to deliver value, innovation, and success – no matter the size of your ambition!</p>
     </div>
     <div class="pricing-container">
       <!-- Freebie Package -->
       <div class="pricing-card">
-        <h3>Freebie</h3>
-        <p>Ideal for individuals who need quick access to basic features.</p>
+        <h3>Starter Package</h3>
+        <p>Perfect for small businesses looking to establish an online presence.</p>
         <div class="price">
-          <h1>$0</h1>
-          <span>/ Month</span>
+          <h1>LKR 40,000</h1>
+          <span>/ Upwards</span>
         </div>
         <button class="pricing-button">Get Started Now</button>
         <ul class="features-list">
-          <li>20,000+ of PNG & SVG graphics</li>
-          <li>Access to 100 million stock images</li>
-          <li>Upload custom icons and fonts</li>
-          <li>Unlimited sharing</li>
-          <li>Upload graphics & video in up to 4k</li>
-          <li>Unlimited Projects</li>
-          <li>Instant Access to our design system</li>
-          <li>Create teams to collaborate on designs</li>
+          <li>Customized 1-page website tailored to your business needs.</li>
+    <li>Basic image gallery to showcase products or services.</li>
+    <li>Contact form for inquiries.</li>
+    <li>Integration of Google Maps for easy navigation.</li>
+    <li>Mobile-friendly, responsive design.</li>
+    <li>Free domain and hosting for the first year.</li>
         </ul>
       </div>
+
+      
       <!-- Professional Package -->
       <div class="pricing-card featured">
-        <h3>Professional</h3>
-        <p>Ideal for individuals who need advanced features and tools for client work.</p>
+        <h3>Growth Package </h3>
+        <p>Ideal for businesses looking to expand their reach and attract more customers.</p>
         <div class="price">
-          <h1>$25</h1>
-          <span>/ Month</span>
+          <h1>LKR 75,000</h1>
+          <span>/ Upwards</span>
         </div>
         <button class="pricing-button">Get Started Now</button>
         <ul class="features-list">
-          <li>20,000+ of PNG & SVG graphics</li>
-          <li>Access to 100 million stock images</li>
-          <li>Upload custom icons and fonts</li>
-          <li>Unlimited sharing</li>
-          <li>Upload graphics & video in up to 4k</li>
-          <li>Unlimited Projects</li>
-          <li class="disabled">Instant Access to our design system</li>
-          <li class="disabled">Create teams to collaborate on designs</li>
+          <li>Fully customized 3-5 page website (Home, About, Services, Gallery, Contact).</li>
+    <li>Advanced image gallery and video integration.</li>
+    <li>Online inquiry or lead generation form.</li>
+    <li>Integration of WhatsApp or live chat for instant communication.</li>
+    <li>Customer reviews/testimonials section.</li>
+    <li>SEO optimization to rank higher on Google.</li>
+    <li>Free domain and hosting for the first year.</li>
+    <li>Basic monthly maintenance for 3 months.</li>
         </ul>
       </div>
       <!-- Enterprise Package -->
       <div class="pricing-card">
-        <h3>Enterprise</h3>
-        <p>Ideal for businesses who need personalized services and security for large teams.</p>
+        <h3>Premium Package </h3>
+        <p>For businesses aiming to stand out and attract a global audience.</p>
         <div class="price">
-          <h1>$100</h1>
-          <span>/ Month</span>
+          <h1>LKR 100,000 </h1>
+          <span>/ Upwards</span>
         </div>
         <button class="pricing-button">Get Started Now</button>
         <ul class="features-list">
-          <li>20,000+ of PNG & SVG graphics</li>
-          <li>Access to 100 million stock images</li>
-          <li>Upload custom icons and fonts</li>
-          <li>Unlimited sharing</li>
-          <li>Upload graphics & video in up to 4k</li>
-          <li>Unlimited Projects</li>
-          <li>Instant Access to our design system</li>
-          <li>Create teams to collaborate on designs</li>
+          <li>Fully customized multi-page website with a modern and scalable design.</li>
+          <li>E-commerce functionality with secure payment gateway integration.</li>
+          <li>Multi-language support for a global audience.</li>
+          <li>Blog/News section to share updates and drive traffic.</li>
+          <li>High-quality image and video optimization for faster loading.</li>
+          <li>Social media integration to drive promotions and traffic (Facebook, Instagram, LinkedIn, etc.).</li>
+          <li>Advanced SEO with analytics to track visitor stats and behavior.</li>
+          <li>Free domain and hosting for the first year.</li>
+          <li>Monthly maintenance for 6 months.</li>
+          <li>Personalized website training session for your team.</li>
         </ul>
       </div>
     </div>
@@ -99,18 +106,21 @@
     <div class="footer-container">
       <!-- Left Icons -->
       <div class="footer-left">
-        <i class="fas fa-search"></i>
-        <i class="fas fa-search"></i>
-        <i class="fas fa-search"></i>
-        <i class="fas fa-search"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin-in"></i>
+        <i class="fas fa-phone"></i>
+        <i class="fas fa-envelope"></i>
       </div>
   
       <!-- Center Buttons -->
       <div class="footer-center">
-        <button>Button</button>
-        <button>Button</button>
-        <button>Button</button>
-        <button>Button</button>
+        <button>Home</button>
+        <button>About Us</button>
+        <button>Projects</button>
+        <button>Services</button>
+        <button>Packages</button>
+        <button>Contact Us</button>
       </div>
   
       <!-- Right Logo -->
@@ -122,6 +132,9 @@
   
   
   
+  
   <script src="script.js"></script>
+  <script src="animations.js" defer></script>
+
 </body>
 </html>
