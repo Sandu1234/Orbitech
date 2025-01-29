@@ -1,0 +1,118 @@
+
+  /* Pricing Section */
+  .pricing-section {
+    background: url('https://www.solarsystemscope.com/textures/download/2k_stars.jpg') repeat, #000;
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .pricing-header h2 {
+    font-family: 'Astro Soft', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .pricing-header p {
+    font-family: 'Astro Soft', sans-serif;
+    font-size: 1.2rem;
+    color: #bbb;
+    margin-bottom: 2rem;
+  }
+  
+  .pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .pricing-card {
+    background-color: #111;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    width: 300px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+    position: relative;
+  }
+  
+  .pricing-card.featured {
+    border: 2px solid #fff;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.3);
+  }
+  
+  .pricing-card h3 {
+    font-family: 'Astro Soft', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .pricing-card p {
+    font-family: 'Astro Soft', sans-serif;
+    font-size: 1rem;
+    color: #bbb;
+    margin-bottom: 1.5rem;
+  }
+  
+  .price h1 {
+    font-family: 'Astro Soft', sans-serif;
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .price span {
+    font-size: 1rem;
+    color: #bbb;
+  }
+  
+  .pricing-button {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    font-family: 'Astro Soft', sans-serif;
+    cursor: pointer;
+    border-radius: 0 0 20px 20px; /* Top corners: 0, Bottom corners: 10px */
+    margin: 1rem 0;
+    transition: all 0.3s ease;
+  }
+  
+  .pricing-button:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .features-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    text-align: left;
+  }
+  
+  .features-list li {
+    font-family: 'Astro Soft', sans-serif;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .features-list li:before {
+    content: "●";
+    color: #fff;
+    margin-right: 0.5rem;
+  }
+  
+  .features-list li.disabled {
+    color: #555;
+  }
+  
+  .features-list li.disabled:before {
+    content: "×";
+    color: #555;
+  }
+  

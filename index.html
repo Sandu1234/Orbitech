@@ -10,9 +10,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+  
   <header>
     <div class="header-container">
       <div class="logo">OBT</div>
@@ -29,6 +30,7 @@
       </a>      </div>
     </div>
   </header>
+  
   <section class="hero">
     <div class="hero-overlay">
       <div class="hero-content">
@@ -47,18 +49,26 @@
       <div class="rotated-text">001</div>
       <div class="circle-container">
         <div class="circle"></div>
-        <img src="./images/hero_image.png" alt="Hero Image" class="hero-image">
+        <img src="./images/home_hero.png" alt="Hero Image" class="hero-image">
       </div>
     </div>
   </section>
-
+  
   <section class="info-section">
     <div class="info-container">
-      <h2>Welcome to Orbitech – Where Innovation Meets Excellence!</h2>
-      <h2>Let’s innovate, create, and transform the digital landscape together!</h2>
-      <button class="info-button">Contact Us</button>
+        <h2>Welcome to Orbitech – Where Innovation Meets Excellence!</h2>
+        <h2>Let’s innovate, create, and transform the digital landscape together!</h2>
+        <button class="info-button">Contact Us</button>
     </div>
-  </section>
+
+    <!-- Orbit Animation -->
+    <div class="orbit-animation">
+        <div class="orbit-path"></div>
+        <div class="planet"></div>
+    </div>
+</section>
+
+
   
   <section class="features-section">
     <h2>Future-Ready Solutions We Build</h2>
@@ -107,124 +117,107 @@
       <div class="faq-content">
         <h2>Have Questions? We’ve Got Answers</h2>
         <p>Curiosity Meets Clarity – Your Questions, Our Answers!</p>
-        <ul class="faq-list">
-          <li>
-            <div class="faq-number">01</div>
-            <div class="faq-text">
-              <div class="faq-top-line"></div>
+        <div class="faq-columns">
+          <ul class="faq-list">
+            <li>
+              <div class="faq-number">01</div>
+              <div class="faq-text">
+                <div class="faq-top-line"></div>
+                <h3>What services does Orbitech offer?</h3>
+                <p>Orbitech specializes in Software Development & Consultation, Web Design & Consultation, UI/UX Design, Mobile App Development, and innovative product development.</p>
+                <div class="faq-bottom-line"></div>
+              </div>
+            </li>
+            <li>
+              <div class="faq-number">02</div>
+              <div class="faq-text">
+                <div class="faq-top-line"></div>
+                <h3>How does Orbitech approach innovative product development?</h3>
+                <p>We combine creativity, the latest technologies, and market insights to design and deliver products that address real-world challenges and foster business growth.</p>
+                <div class="faq-bottom-line"></div>
+              </div>
+            </li>
+            <li>
+              <div class="faq-number">03</div>
+              <div class="faq-text">
+                <div class="faq-top-line"></div>
+                <h3>Can I get a consultation before starting a project?</h3>
+                <p>Absolutely! We offer expert consultations to understand your business needs, define objectives, and craft a strategic roadmap for your project.</p>
+                <div class="faq-bottom-line"></div>
+              </div>
+            </li>
+            <li>
+              <div class="faq-number">04</div>
+              <div class="faq-text">
+                <div class="faq-top-line"></div>
+                <h3>What industries do you work with?</h3>
+                <p>We work with industries like healthcare, finance, education, retail, and more, ensuring solutions are tailored to meet your unique needs.</p>
+                <div class="faq-bottom-line"></div>
+              </div>
+            </li>
+            <li>
+              <div class="faq-number">05</div>
+              <div class="faq-text">
+                <div class="faq-top-line"></div>
+                <h3>Do you provide ongoing support after project delivery?</h3>
+                <p>Yes, we provide post-launch support and maintenance to ensure your product stays up-to-date, secure, and optimized for success.</p>
+                <div class="faq-bottom-line"></div>
+              </div>
+            </li>
+          </ul>
 
-              <h3>What services does Orbitech offer?</h3>
-              <p>Orbitech specializes in Software Development & Consultation, Web Design & Consultation, UI/UX Design, Mobile App Development, and innovative product development to transform your ideas into reality.</p>
-              <div class="faq-bottom-line"></div>
-
-            </div>
-          </li>
-          <li>
-            <div class="faq-number">02</div>
-            <div class="faq-text">
-              <div class="faq-top-line"></div>
-
-              <h3>How does Orbitech approach innovative product development?</h3>
-              <p>We combine creativity, the latest technologies, and market insights to design and deliver products that address real-world challenges and foster growth for businesses.</p>
-              <div class="faq-bottom-line"></div>
-
-            </div>
-          </li>
-          <li>
-            <div class="faq-number">03</div>
-            <div class="faq-text">
-              <div class="faq-top-line"></div>
-
-              <h3>Can I get a consultation before starting a project?</h3>
-              <p>Absolutely! We offer expert consultations to understand your business needs, define objectives, and craft a strategic roadmap for your project.</p>
-              <div class="faq-bottom-line"></div>
-
-            </div>
-          </li>
-          <li>
-            <div class="faq-number">04</div>
-            <div class="faq-text">
-              <div class="faq-top-line"></div>
-
-              <h3>What industries do you work with?</h3>
-              <p>We work with a diverse range of industries, including healthcare, finance, education, retail, and more, ensuring solutions are tailored to meet your unique needs.</p>
-              <div class="faq-bottom-line"></div>
-
-            </div>
-          </li>
-          <li>
-            <div class="faq-number">05</div>
-            <div class="faq-text">
-              <div class="faq-top-line"></div>
-
-              <h3>Do you provide ongoing support after project delivery?</h3>
-              <p>Yes, we provide post-launch support and maintenance to ensure your product stays up-to-date, secure, and optimized for success.</p>
-              <div class="faq-bottom-line"></div>
-
-            </div>
-          </li>
-          <li>
-            <div class="faq-number">06</div>
-            <div class="faq-text">
-              <div class="faq-top-line"></div>
-
-              <h3>Using Trending Technologies</h3>
-              <p>We Develop The Best Applications. Using Trending Technologies We Develop The Best Applications.</p>
-              <div class="faq-bottom-line"></div>
-
-            </div>
-          </li>
-          <li>
-            <div class="faq-number">07</div>
-            <div class="faq-text">
-              <div class="faq-top-line"></div>
-
-              <h3>What makes Orbitech different from other digital solution providers?</h3>
-              <p>At Orbitech, we focus on innovation, user-centric designs, and cutting-edge technology, delivering not just solutions but experiences that drive results.</p>
-              <div class="faq-bottom-line"></div>
-
-            </div>
-          </li>
-          <li>
-            <div class="faq-number">08</div>
-            <div class="faq-text">
-              <div class="faq-top-line"></div>
-
-              <h3>How long does it take to complete a project?</h3>
-              <p>The timeline depends on the project’s complexity and scope. During the consultation phase, we provide a detailed project timeline to ensure transparency.</p>
-              <div class="faq-bottom-line"></div>
-
-            </div>
-          </li>
-          <li>
-            <div class="faq-number">09</div>
-            <div class="faq-text">
-              <div class="faq-top-line"></div>
-
-              <h3>Can you help improve an existing website or app?</h3>
-              <p>Yes, we can enhance your existing website or app by optimizing performance, improving design, and adding new features tailored to your needs.</p>
-              <div class="faq-bottom-line"></div>
-
-            </div>
-          </li>
-          <li>
-            <div class="faq-number">10</div>
-            <div class="faq-text">
-              <div class="faq-top-line"></div>
-
-              <h3>Do you work with startups and small businesses?</h3>
-              <p>Absolutely! We are passionate about empowering startups and small businesses by providing innovative solutions that fit their budgets and goals.</p>
-              <div class="faq-bottom-line"></div>
-
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="faq-image">
-        <img src="./images/robot.png" alt="Robot Image">
+          <ul class="faq-list">
+            <li>
+              <div class="faq-number">06</div>
+              <div class="faq-text">
+                <div class="faq-top-line"></div>
+                <h3>Using Trending Technologies?</h3>
+                <p>We Develop The Best Applications using trending technologies to ensure efficiency and high performance.</p>
+                <div class="faq-bottom-line"></div>
+              </div>
+            </li>
+            <li>
+              <div class="faq-number">07</div>
+              <div class="faq-text">
+                <div class="faq-top-line"></div>
+                <h3>What makes Orbitech different?</h3>
+                <p>At Orbitech, we focus on innovation, user-centric designs, and cutting-edge technology, delivering impactful digital solutions.</p>
+                <div class="faq-bottom-line"></div>
+              </div>
+            </li>
+            <li>
+              <div class="faq-number">08</div>
+              <div class="faq-text">
+                <div class="faq-top-line"></div>
+                <h3>How long does it take to complete a project?</h3>
+                <p>The timeline depends on project complexity and scope. We provide a detailed roadmap during consultation.</p>
+                <div class="faq-bottom-line"></div>
+              </div>
+            </li>
+            <li>
+              <div class="faq-number">09</div>
+              <div class="faq-text">
+                <div class="faq-top-line"></div>
+                <h3>Can you improve an existing website or app?</h3>
+                <p>Yes, we can enhance your website or app by optimizing performance, improving design, and adding new features.</p>
+                <div class="faq-bottom-line"></div>
+              </div>
+            </li>
+            <li>
+              <div class="faq-number">10</div>
+              <div class="faq-text">
+                <div class="faq-top-line"></div>
+                <h3>Do you work with startups and small businesses?</h3>
+                <p>Absolutely! We empower startups and small businesses with innovative solutions that fit their budgets and goals.</p>
+                <div class="faq-bottom-line"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-  </section>
+</section>
+
   
   <section class="latest-blogs">
     <div class="blogs-header">
@@ -282,46 +275,44 @@
       <h2>Voices of Trust</h2>
       <p>Don’t just take our word for it – hear from those who’ve experienced the Orbitech difference. From startups to enterprises, our clients share their stories of success, trust, and innovation.</p>
     </div>
-    <div class="testimonials-grid">
-      <!-- Testimonial Card 1 -->
-      <div class="testimonial-card">
+    <div class="testimonials-carousel">
+      <div class="testimonial-card active">
         <img src="./images/person.jpg" alt="Person 1" class="testimonial-image">
         <div class="stars">
           <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
         </div>
-        <p class="testimonial-text">"We love Landingfolio! Our designers were using it for their projects, so we already know what kind of design they want."</p>
+        <p class="testimonial-text">"Orbitech transformed our business! Their expertise and dedication were beyond expectations."</p>
         <div class="testimonial-author">
-          <span class="name">Jenny Wilson</span>
-          <span class="company">Growar.io</span>
+          <span class="name">Emily Johnson</span>
+          <span class="company">TechSolutions Inc.</span>
         </div>
       </div>
-      <!-- Testimonial Card 2 -->
       <div class="testimonial-card">
         <img src="./images/person.jpg" alt="Person 2" class="testimonial-image">
         <div class="stars">
           <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
         </div>
-        <p class="testimonial-text">"We love Landingfolio! Our designers were using it for their projects, so we already know what kind of design they want."</p>
+        <p class="testimonial-text">"Outstanding service! The team at Orbitech really understands our vision and executed it flawlessly."</p>
         <div class="testimonial-author">
-          <span class="name">Jenny Wilson</span>
-          <span class="company">Growar.io</span>
+          <span class="name">Michael Smith</span>
+          <span class="company">Creative Digital</span>
         </div>
       </div>
-      <!-- Testimonial Card 3 -->
       <div class="testimonial-card">
         <img src="./images/person.jpg" alt="Person 3" class="testimonial-image">
         <div class="stars">
           <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
         </div>
-        <p class="testimonial-text">"We love Landingfolio! Our designers were using it for their projects, so we already know what kind of design they want."</p>
+        <p class="testimonial-text">"The best digital experience we've had. Their UI/UX work elevated our platform to the next level."</p>
         <div class="testimonial-author">
-          <span class="name">Jenny Wilson</span>
-          <span class="company">Growar.io</span>
+          <span class="name">Sophia Lee</span>
+          <span class="company">NextGen Solutions</span>
         </div>
       </div>
-      
     </div>
-  </section>
+  
+</section>
+
   
   <footer class="footer">
     <div class="footer-container">
@@ -355,6 +346,9 @@
   
   <script src="script.js"></script>
   <script src="animations.js" defer></script>
+  <script>
+    
+  </script>
 
 </body>
 </html>

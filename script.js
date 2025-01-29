@@ -1,49 +1,42 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const blogCards = document.querySelectorAll('.blog-card');
+  const testimonialCards = document.querySelectorAll('.testimonial-card');
   const dots = document.querySelectorAll('.carousel-dots .dot');
   let currentIndex = 0;
 
-  // Function to show the current card
-  function showCard(index) {
-    // Reset all cards
-    blogCards.forEach((card, i) => {
-      card.style.opacity = '0';
-      card.style.transform = 'translateX(100%)'; // Position cards off-screen to the right
-      card.style.position = 'absolute'; // Stack all cards
-    });
+  function showTestimonial(index) {
+      testimonialCards.forEach((card, i) => {
+          card.style.opacity = '0';
+          card.style.transform = 'translateX(100%)';
+          card.style.position = 'absolute';
+      });
 
-    // Show the active card
-    blogCards[index].style.opacity = '1';
-    blogCards[index].style.transform = 'translateX(0)'; // Move the active card into view
-    blogCards[index].style.position = 'relative'; // Keep the active card in its position
+      testimonialCards[index].style.opacity = '1';
+      testimonialCards[index].style.transform = 'translateX(0)';
+      testimonialCards[index].style.position = 'relative';
 
-    // Update dots
-    dots.forEach(dot => dot.classList.remove('active'));
-    dots[index].classList.add('active');
+      dots.forEach(dot => dot.classList.remove('active'));
+      dots[index].classList.add('active');
   }
 
-  // Function to move to the next card
-  function nextCard() {
-    currentIndex = (currentIndex + 1) % blogCards.length; // Increment index and loop back to 0 if it exceeds the array length
-    showCard(currentIndex);
+  function nextTestimonial() {
+      currentIndex = (currentIndex + 1) % testimonialCards.length;
+      showTestimonial(currentIndex);
   }
 
-  // Auto-scroll every 5 seconds
-  let autoScroll = setInterval(nextCard, 5000);
+  let autoScroll = setInterval(nextTestimonial, 5000);
 
-  // Add click event to dots for manual navigation
   dots.forEach((dot, index) => {
-    dot.addEventListener('click', () => {
-      clearInterval(autoScroll); // Stop auto-scroll when the user interacts
-      showCard(index); // Show the clicked card
-      currentIndex = index; // Update the current index
-      autoScroll = setInterval(nextCard, 5000); // Restart auto-scroll
-    });
+      dot.addEventListener('click', () => {
+          clearInterval(autoScroll);
+          showTestimonial(index);
+          currentIndex = index;
+          autoScroll = setInterval(nextTestimonial, 5000);
+      });
   });
 
-  // Initialize the first card
-  showCard(currentIndex);
+  showTestimonial(currentIndex);
 });
+
 
 // Add the custom cursor element
 const cursor = document.createElement('div');
@@ -65,4 +58,66 @@ interactiveElements.forEach((el) => {
   el.addEventListener('mouseleave', () => {
     cursor.style.transform = 'scale(1)'; // Restore cursor size
   });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  function createOrbitAnimation() {
+      const orbitContainer = document.querySelector(".orbit-animation");
+      const orbitPath = document.createElement("div");
+      const planet = document.createElement("div");
+
+      orbitPath.classList.add("orbit-path");
+      planet.classList.add("planet");
+      orbitContainer.appendChild(orbitPath);
+      orbitContainer.appendChild(planet);
+
+      // Random position for orbit placement
+      const randomX = Math.random() * window.innerWidth * 0.4 + 200;
+      const randomY = Math.random() * window.innerHeight * 0.4 + 100;
+      const randomAngle = Math.random() * 360;
+
+      // Position orbit path and planet
+      gsap.set(orbitPath, { left: randomX, top: randomY, rotate: randomAngle });
+      gsap.set(planet, { left: randomX + 600, top: randomY }); // Adjusted for new orbit size
+
+      // Animate orbit appearance
+      gsap.to(orbitPath, {
+          opacity: 0.3, /* More visible */
+          duration: 2,
+          ease: "power2.out",
+      });
+
+      // Animate planet movement along the orbit path
+      gsap.to(planet, {
+          opacity: 1,
+          duration: 8, // Slow movement
+          motionPath: {
+              path: [
+                  { x: randomX + 600, y: randomY - 200 },
+                  { x: randomX + 900, y: randomY + 150 },
+                  { x: randomX + 1200, y: randomY - 100 },
+                  { x: randomX + 600, y: randomY + 250 },
+                  { x: randomX, y: randomY }
+              ],
+              align: orbitPath,
+              autoRotate: true
+          },
+          ease: "power1.inOut",
+          onComplete: () => {
+              // Fade out planet and orbit
+              gsap.to([planet, orbitPath], {
+                  opacity: 0,
+                  duration: 3,
+                  ease: "power2.out",
+                  onComplete: () => {
+                      orbitContainer.removeChild(orbitPath);
+                      orbitContainer.removeChild(planet);
+                      setTimeout(createOrbitAnimation, 5000); // Restart animation after delay
+                  }
+              });
+          }
+      });
+  }
+
+  createOrbitAnimation();
 });

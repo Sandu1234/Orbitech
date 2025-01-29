@@ -1,0 +1,158 @@
+
+.contact-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('https://www.solarsystemscope.com/textures/download/2k_stars.jpg') repeat, #000;
+  background-size: cover;
+  background-attachment: fixed;  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* .rotated-text {
+  position: absolute;
+  top: 10%;
+  left: 2%;
+  transform: rotate(-90deg);
+  font-size: 2rem;
+  font-family: 'Astro Soft', sans-serif;
+  color: #fff;
+} */
+
+.orbitech-text {
+  position: absolute;
+  width: 100%; /* Ensures it spans full width */
+  font-family: 'Astro Soft', sans-serif;
+  font-weight: 400;
+  color: transparent;
+  -webkit-text-stroke: 2px #fff; /* White outline effect */
+  opacity: 0.3; /* Faint effect */
+  z-index: 2; /* Ensure it's above the background but below other elements */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Stack text in two lines */
+  line-height: 1.1; /* Reduce spacing between lines */
+}
+
+/* Main text (ORBITECH) */
+.orbitech-text .main-text,
+.orbitech-text .subtext {
+  font-size: 20vw; /* Responsive size */
+  font-weight: 400;
+  color: transparent;
+  -webkit-text-stroke: 2px #fff; /* White outline effect */
+  opacity: 0.8; /* Ensure both have the same opacity */
+}
+
+.hero-image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2; /* Place the image above the text */
+}
+
+.circle {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  z-index: 1; /* Behind the image but above the text */
+}
+
+.contact-hero .hero-image {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  height: auto;
+  top: 60% !important;
+}  
+
+
+  /* Contact Section */
+  .contact-hero .contact-section {
+    padding: 4rem 0;
+   
+  }
+  
+  .contact-section {
+    padding: 6rem 0; /* Increase top and bottom padding */
+    margin-top: 5rem; /* Adds extra space between hero section and contact section */
+    background: url('https://www.solarsystemscope.com/textures/download/2k_stars.jpg') repeat, #000;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+  .contact-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .contact-item {
+    background: #111;
+    padding: 2rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    border: 1px solid #fff;
+  }
+  
+  .contact-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .contact-item i {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  .contact-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-item a {
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    display: inline-block;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .contact-item a:hover {
+    background: white;
+    color: black;
+  }
+  
+  /* Animations */
+  @keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  
