@@ -29,8 +29,8 @@
     -webkit-text-stroke: 2px #fff; /* White outline effect */
     opacity: 0.3; /* Faint effect */
     z-index: 2; /* Ensure it's above the background but below other elements */
-    top: 50%;
-    left: 50%;
+    top: 45%;
+    left: 48%;
     transform: translate(-50%, -50%);
     text-align: center;
     display: flex;
@@ -87,7 +87,7 @@
     margin-bottom: 2rem;
   }
   
-  .features-grid {
+  .services-features-grid {
     display: grid;
     grid-template-columns: repeat(3, 300px); /* Fixed column width */
     justify-content: center; /* Center the grid horizontally */
@@ -96,7 +96,7 @@
     padding: 2rem 0; /* Add vertical spacing */
   }
   
-  .feature-box {
+  .services-feature-box {
     background: transparent;
     border: 1px solid #fff;
     padding: 2rem;
@@ -106,36 +106,28 @@
   }
   
   
-  .feature-box:hover {
+  .services-feature-box:hover {
     background: rgba(255, 255, 255, 0.1);
     transform: translateY(-5px);
   }
   
-  .feature-box i {
+  .services-feature-box i {
     font-size: 2rem;
     color: #fff;
     margin-bottom: 1rem;
   }
   
-  .feature-box h3 {
+  .services-feature-box h3 {
     font-size: 1.5rem;
     font-family: 'Astro Soft', sans-serif;
     margin-bottom: 1rem;
   }
   
-  .feature-box p {
+  .services-feature-box p {
     font-size: 0.9rem;
     line-height: 1.6;
   }
   
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .features-grid {
-      grid-template-columns: 1fr; /* Single column for smaller screens */
-    }
-  }
-
 
     
   /* FAQ Section Styles */
@@ -226,13 +218,7 @@
   color: #bbb;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .faq-columns {
-      flex-direction: column; /* Switch to one column */
-      gap: 2rem;
-  }
-}
+
 
 
 /* Default grey color for all FAQ text */
@@ -283,14 +269,136 @@
 
   
   
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .faq-container {
-      flex-direction: column;
-      align-items: center;
+
+  @media (max-width: 600px) {
+    .services-hero {
+      height: auto; 
+      background-attachment: scroll; 
+      padding-bottom: 2rem; 
     }
   
-    .faq-image {
-      margin-top: 2rem;
+    .hero-content {
+      padding-top: 2rem; 
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .orbitech-text {
+      top: 50%;         
+      left: 50%;
+      transform: translate(-50%, -30%); 
+      opacity: 0.5;      
+      width: 90%;       
+      line-height: 1;    
+    }
+  
+    .orbitech-text .main-text,
+    .orbitech-text .subtext {
+      font-size: 20vw;  
+      -webkit-text-stroke: 1px #fff; 
+    }
+  
+    .circle {
+      width: 300px; 
+      height: 300px; 
+    }
+  
+    .hero-image {
+      max-width: 250px;   
+      top: auto !important; 
+      transform: none;     
+      margin-top: 1rem;    
+    }
+  
+    .social-icons {
+      position: static; 
+      margin-top: 1rem;
+      flex-direction: row; 
+      gap: 1rem; 
+      justify-content: center;
     }
   }
+
+  @media only screen and (min-width: 601px) and (max-width: 701px) {
+    .services-features-grid {
+      display: grid;
+      grid-template-columns: 1fr ; /* 2 columns */
+      gap: 1rem;
+      justify-items: center; /* Center items horizontally in their cells */
+      align-items: center;   /* Center items vertically in their cells */
+    }
+    
+  }
+
+  @media only screen and (min-width: 702px) and (max-width: 781px) {
+    .services-features-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr ; /* 2 columns */
+      gap: 1rem;
+      justify-items: center; /* Center items horizontally in their cells */
+      align-items: center;   /* Center items vertically in their cells */
+    }
+    
+  }
+  
+
+@media only screen and (min-width: 882px) and (max-width: 981px) {
+  .services-features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 2 columns */
+    gap: 1rem;
+    justify-items: center; /* Center items horizontally in their cells */
+    align-items: center;   /* Center items vertically in their cells */
+  }
+
+}
+
+@media only screen and (min-width: 982px) and (max-width: 1024px) {
+  .services-features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 2 columns */
+    gap: 1rem;
+    justify-items: center; /* Center items horizontally in their cells */
+    align-items: center;   /* Center items vertically in their cells */
+  }
+
+}
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .services-features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 2 columns */
+    gap: 1rem;
+    justify-items: center; /* Center items horizontally in their cells */
+    align-items: center;   /* Center items vertically in their cells */
+  }
+
+}
+
+
+@media only screen and (min-width: 1201px) and (max-width: 1400px) {
+
+  .services-features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 2 columns */
+    gap: 1rem;
+    justify-items: center; /* Center items horizontally in their cells */
+    align-items: center;   /* Center items vertically in their cells */
+  }
+
+}
+
+/* @media only screen and (min-width: 1401px) and (max-width: 1500px) {
+
+  .services-features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 1rem;
+    justify-items: center; 
+    align-items: center;   
+  }
+
+} */
+

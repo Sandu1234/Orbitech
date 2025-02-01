@@ -121,3 +121,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
   createOrbitAnimation();
 });
+
+const hamburgerIcon = document.getElementById('hamburger-icon');
+const mobileMenu = document.getElementById('mobileMenu');
+const closeBtn = document.getElementById('closeBtn');
+
+// OPEN the mobile menu
+hamburgerIcon.addEventListener('click', () => {
+  mobileMenu.style.display = 'block';
+});
+
+// CLOSE the mobile menu
+closeBtn.addEventListener('click', () => {
+  mobileMenu.style.display = 'none';
+});

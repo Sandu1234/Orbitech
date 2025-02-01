@@ -17,7 +17,10 @@
 <body>
   <header>
     <div class="header-container">
+      <!-- Logo -->
       <div class="logo">OBT</div>
+  
+      <!-- Desktop Nav (shown on large screens, hidden on mobile) -->
       <nav class="nav-links">
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
@@ -25,12 +28,32 @@
         <a href="services.html">Services</a>
         <a href="packages.html">Packages</a>
       </nav>
+  
+      <!-- Contact Button -->
       <div class="header-button">
         <a href="contact.html">
           <button>Contact Us</button>
-      </a>      </div>
+        </a>
+      </div>
+  
+      <!-- Hamburger Icon (mobile only) -->
+      <div class="hamburger" id="hamburger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
   </header>
+  
+  <!-- Mobile Menu (slide-in) -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="close-btn" id="closeBtn">&times;</button>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="projects.html">Projects</a>
+    <a href="services.html">Services</a>
+    <a href="packages.html">Packages</a>
+  </div>
 
   <section class="about-hero">
     <div class="hero-content">
@@ -108,33 +131,33 @@
 
   <section class="about-features-section">
     <h2>Building Trust Through Excellence</h2>
-    <div class="features-grid">
-      <div class="feature-box">
+    <div class="about-features-grid">
+      <div class="about-feature-box">
         <i class="fas fa-headphones"></i>
         <h3>Proven Expertise Across Industries</h3>
         <p>With experience in diverse sectors, we deliver tailored solutions that address unique challenges, ensuring success for businesses of all sizes.</p>
       </div>
-      <div class="feature-box">
+      <div class="about-feature-box">
         <i class="fas fa-chart-line"></i>
         <h3>Innovation-Driven Approach</h3>
         <p>We thrive on creativity and innovation, crafting products that are not just functional but transformative, setting you apart in a competitive market.</p>
       </div>
-      <div class="feature-box">
+      <div class="about-feature-box">
         <i class="fas fa-file-alt"></i>
         <h3>Client-Centric Commitment</h3>
         <p>Your success is our priority. We listen, adapt, and deliver solutions that align with your vision and business goals.</p>
       </div>
-      <div class="feature-box">
+      <div class="about-feature-box">
         <i class="fas fa-box"></i>
         <h3>End-to-End Solutions</h3>
         <p>From ideation to implementation and beyond, we provide comprehensive services, ensuring a seamless journey for your digital transformation.</p>
       </div>
-      <div class="feature-box">
+      <div class="about-feature-box">
         <i class="fas fa-star"></i>
         <h3>Transparent Processes</h3>
         <p>Trust is built on clarity. Our processes are transparent, with clear communication and regular updates at every step of your project.</p>
       </div>
-      <div class="feature-box">
+      <div class="about-feature-box">
         <i class="fas fa-sync-alt"></i>
         <h3>Continuous Support & Reliability</h3>
         <p>Our relationship doesn’t end at delivery. We provide ongoing support and maintenance to keep your solutions optimized and up-to-date.</p>
@@ -156,12 +179,12 @@
   
       <!-- Center Buttons -->
       <div class="footer-center">
-        <button>Home</button>
-        <button>About Us</button>
-        <button>Projects</button>
-        <button>Services</button>
-        <button>Packages</button>
-        <button>Contact Us</button>
+        <a href="index.html"><button>Home</button></a>
+        <a href="about.html"><button>About Us</button></a>
+        <a href="projects.html"><button>Projects</button></a>
+        <a href="services.html"><button>Services</button></a>
+        <a href="packages.html"><button>Packages</button></a>
+        <a href="contact.html"><button>Contact Us</button></a>
       </div>
   
       <!-- Right Logo -->

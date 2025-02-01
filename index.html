@@ -16,7 +16,10 @@
   
   <header>
     <div class="header-container">
+      <!-- Logo -->
       <div class="logo">OBT</div>
+  
+      <!-- Desktop Nav (shown on large screens, hidden on mobile) -->
       <nav class="nav-links">
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
@@ -24,12 +27,32 @@
         <a href="services.html">Services</a>
         <a href="packages.html">Packages</a>
       </nav>
+  
+      <!-- Contact Button -->
       <div class="header-button">
         <a href="contact.html">
           <button>Contact Us</button>
-      </a>      </div>
+        </a>
+      </div>
+  
+      <!-- Hamburger Icon (mobile only) -->
+      <div class="hamburger" id="hamburger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
   </header>
+  
+  <!-- Mobile Menu (slide-in) -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="close-btn" id="closeBtn">&times;</button>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="projects.html">Projects</a>
+    <a href="services.html">Services</a>
+    <a href="packages.html">Packages</a>
+  </div>
   
   <section class="hero">
     <div class="hero-overlay">
@@ -228,38 +251,45 @@
     <div class="blogs-carousel">
       <div class="blog-card active">
         <div class="blog-content">
-          <h3>Blog Topic 1</h3>
-          <p>Description of the blog goes here. Add an engaging description to capture attention.</p>
+          <h3>Orbitech-Blog</h3>
+          <p>Artificial Intelligence is Revolutionizing User Experience Design.</p>
           <div class="header-button">
-            <button>Read More</button>
-          </div>
+            <a href="https://medium.com/@orbitech99/the-rise-of-ai-powered-ux-how-artificial-intelligence-is-revolutionizing-user-experience-design-f3d14dfd098e" target="_blank">
+                <button>Read More</button>
+            </a>
+        </div>
+        
         </div>
         <div class="blog-image">
-          <img src="./images/blog1.jpg" alt="Blog 1">
+          <img src="./images/blog1.png" alt="Blog 1">
         </div>
       </div>
       <div class="blog-card">
         <div class="blog-content">
-          <h3>Blog Topic 2</h3>
-          <p>Description of the second blog. Add details that are relevant to the blog topic.</p>
+          <h3>Orbitech-Blog</h3>
+          <p>How Decentralized Applications (dApps) are Reshaping Digital Businesses.</p>
           <div class="header-button">
-            <button>Read More</button>
-          </div>
+            <a href="https://medium.com/@orbitech99/beyond-web-3-0-how-decentralized-applications-dapps-are-reshaping-digital-businesses-b712688fafcc" target="_blank">
+                <button>Read More</button>
+            </a>
+        </div>
         </div>
         <div class="blog-image">
-          <img src="./images/blog2.jpg" alt="Blog 2">
+          <img src="./images/blog2.png" alt="Blog 2">
         </div>
       </div>
       <div class="blog-card">
         <div class="blog-content">
-          <h3>Blog Topic 3</h3>
-          <p>Another engaging blog description goes here to entice readers.</p>
+          <h3>Orbitech-Blog</h3>
+          <p>Bringing Artificial Intelligence Closer to Devices for Real-Time Processing</p>
           <div class="header-button">
-            <button>Read More</button>
-          </div>
+            <a href="https://medium.com/@orbitech99/edge-ai-bringing-artificial-intelligence-closer-to-devices-for-real-time-processing-ab1b5d0f2fce" target="_blank">
+                <button>Read More</button>
+            </a>
+        </div>
         </div>
         <div class="blog-image">
-          <img src="./images/blog3.jpg" alt="Blog 3">
+          <img src="./images/blog3.png" alt="Blog 3">
         </div>
       </div>
     </div>
@@ -327,12 +357,13 @@
   
       <!-- Center Buttons -->
       <div class="footer-center">
-        <button>Home</button>
-        <button>About Us</button>
-        <button>Projects</button>
-        <button>Services</button>
-        <button>Packages</button>
-        <button>Contact Us</button>
+        <a href="index.html"><button>Home</button></a>
+        <a href="about.html"><button>About Us</button></a>
+        <a href="projects.html"><button>Projects</button></a>
+        <a href="services.html"><button>Services</button></a>
+        <a href="packages.html"><button>Packages</button></a>
+        <a href="contact.html"><button>Contact Us</button></a>
+        
       </div>
   
       <!-- Right Logo -->

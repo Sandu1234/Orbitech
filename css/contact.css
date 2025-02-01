@@ -20,16 +20,6 @@
   width: 100%;
 }
 
-/* .rotated-text {
-  position: absolute;
-  top: 10%;
-  left: 2%;
-  transform: rotate(-90deg);
-  font-size: 2rem;
-  font-family: 'Astro Soft', sans-serif;
-  color: #fff;
-} */
-
 .orbitech-text {
   position: absolute;
   width: 100%; /* Ensures it spans full width */
@@ -39,8 +29,8 @@
   -webkit-text-stroke: 2px #fff; /* White outline effect */
   opacity: 0.3; /* Faint effect */
   z-index: 2; /* Ensure it's above the background but below other elements */
-  top: 50%;
-  left: 50%;
+  top: 45%;
+  left: 48%;
   transform: translate(-50%, -50%);
   text-align: center;
   display: flex;
@@ -156,3 +146,127 @@
     }
   }
   
+  @media (max-width: 600px) {
+  .contact-hero {
+    height: auto; 
+    background-attachment: scroll; 
+    padding-bottom: 2rem; 
+  }
+
+  .hero-content {
+    padding-top: 2rem; 
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .orbitech-text {
+    top: 50%;         
+    left: 50%;
+    transform: translate(-50%, -30%); 
+    opacity: 0.5;      
+    width: 90%;       
+    line-height: 1;    
+  }
+
+  .orbitech-text .main-text,
+  .orbitech-text .subtext {
+    font-size: 20vw;  
+    -webkit-text-stroke: 1px #fff; 
+  }
+
+  .circle {
+    width: 300px; 
+    height: 300px; 
+  }
+
+  .hero-image {
+    max-width: 250px;   
+    top: auto !important; 
+    transform: none;     
+    margin-top: 1rem;    
+  }
+
+  .social-icons {
+    position: static; 
+    margin-top: 1rem;
+    flex-direction: row; 
+    gap: 1rem; 
+    justify-content: center;
+  }
+    .contact-section {
+      background-attachment: scroll;  
+      padding: 3rem 1rem;            
+      margin-top: 2rem;              
+    }
+  
+    .contact-container {
+      display: grid;
+      grid-template-columns: 1fr;  /* Switch to single-column layout */
+      gap: 1rem;                   /* Slightly reduce gap */
+      max-width: 400px;           /* Limit width so items aren't too stretched */
+      margin: 0 auto;             /* Center the grid */
+    }
+  
+    .contact-item {
+      padding: 1rem;              /* Less padding than desktop */
+      border-radius: 8px;         /* Slightly smaller corners */
+    }
+  
+    .contact-item i {
+      font-size: 2rem;           /* Decrease icon size */
+      margin-bottom: 0.5rem;
+    }
+  
+    .contact-item h3 {
+      font-size: 1rem;           /* Smaller heading */
+      margin-bottom: 0.5rem;
+    }
+  
+    .contact-item a {
+      font-size: 0.9rem;         /* Reduce button text size */
+      padding: 0.4rem 0.8rem;    /* Slightly smaller buttons */
+      border-radius: 15px;       /* Adjust border radius if desired */
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 768px) {
+    /* Contact Section Background & Spacing */
+    .contact-section {
+      background-attachment: scroll;
+      padding: 3rem 2rem; /* Increase side padding slightly if you wish */
+      margin-top: 2rem;
+    }
+  
+    /* Display Two Columns Side-by-Side */
+    .contact-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* 2 columns */
+      gap: 1.5rem;                   /* Slight gap between columns */
+      max-width: 700px;             /* Adjust as needed */
+      margin: 0 auto;
+    }
+  
+    /* Adjust Card Padding & Sizing */
+    .contact-item {
+      padding: 1.5rem;        /* A bit more padding for mid-size screens */
+      border-radius: 8px;
+    }
+  
+    .contact-item i {
+      font-size: 2.2rem;      /* Slightly bigger icons if you want */
+      margin-bottom: 0.8rem;
+    }
+  
+    .contact-item h3 {
+      font-size: 1.1rem;      /* Slightly bigger heading */
+      margin-bottom: 0.5rem;
+    }
+  
+    .contact-item a {
+      font-size: 0.95rem;     /* Scale up from the smaller phone size */
+      padding: 0.5rem 1rem;   /* Slightly larger button */
+      border-radius: 15px;
+    }
+  }
+

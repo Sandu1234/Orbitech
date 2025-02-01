@@ -17,7 +17,10 @@
 <body>
   <header>
     <div class="header-container">
+      <!-- Logo -->
       <div class="logo">OBT</div>
+  
+      <!-- Desktop Nav (shown on large screens, hidden on mobile) -->
       <nav class="nav-links">
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
@@ -25,12 +28,32 @@
         <a href="services.html">Services</a>
         <a href="packages.html">Packages</a>
       </nav>
+  
+      <!-- Contact Button -->
       <div class="header-button">
         <a href="contact.html">
           <button>Contact Us</button>
-      </a>      </div>
+        </a>
+      </div>
+  
+      <!-- Hamburger Icon (mobile only) -->
+      <div class="hamburger" id="hamburger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
   </header>
+  
+  <!-- Mobile Menu (slide-in) -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="close-btn" id="closeBtn">&times;</button>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="projects.html">Projects</a>
+    <a href="services.html">Services</a>
+    <a href="packages.html">Packages</a>
+  </div>
 
   <section class="project-hero">
     <div class="hero-content">
@@ -57,7 +80,7 @@
     <div class="projects-container">
       <!-- Project Card -->
       <div class="project-card">
-        <img src="./images/blog2.jpg" alt="Project 1">
+        <img src="./images/blog2.png" alt="Project 1">
         <div class="project-content">
           <span class="category">Design</span>
           <h3>UX review presentations</h3>
@@ -72,7 +95,7 @@
       <!-- Add more cards -->
       <!-- Example -->
       <div class="project-card">
-        <img src="./images/blog1.jpg" alt="Project 2">
+        <img src="./images/blog1.png" alt="Project 2">
         <div class="project-content">
           <span class="category">Product</span>
           <h3>Migrating to Linear 101</h3>
@@ -85,7 +108,7 @@
       </div>
 
       <div class="project-card">
-        <img src="./images/blog1.jpg" alt="Project 2">
+        <img src="./images/blog1.png" alt="Project 2">
         <div class="project-content">
           <span class="category">Product</span>
           <h3>Migrating to Linear 101</h3>
@@ -98,7 +121,7 @@
       </div>
 
       <div class="project-card">
-        <img src="./images/blog1.jpg" alt="Project 2">
+        <img src="./images/blog1.png" alt="Project 2">
         <div class="project-content">
           <span class="category">Product</span>
           <h3>Migrating to Linear 101</h3>
@@ -112,7 +135,7 @@
   
           <!-- Project Card -->
           <div class="project-card">
-            <img src="./images/blog2.jpg" alt="Project 1">
+            <img src="./images/blog2.png" alt="Project 1">
             <div class="project-content">
               <span class="category">Design</span>
               <h3>UX review presentations</h3>
@@ -127,7 +150,7 @@
           <!-- Add more cards -->
           <!-- Example -->
           <div class="project-card">
-            <img src="./images/blog1.jpg" alt="Project 2">
+            <img src="./images/blog1.png" alt="Project 2">
             <div class="project-content">
               <span class="category">Product</span>
               <h3>Migrating to Linear 101</h3>
@@ -140,7 +163,7 @@
           </div>
     
           <div class="project-card">
-            <img src="./images/blog1.jpg" alt="Project 2">
+            <img src="./images/blog1.png" alt="Project 2">
             <div class="project-content">
               <span class="category">Product</span>
               <h3>Migrating to Linear 101</h3>
@@ -153,7 +176,7 @@
           </div>
     
           <div class="project-card">
-            <img src="./images/blog1.jpg" alt="Project 2">
+            <img src="./images/blog1.png" alt="Project 2">
             <div class="project-content">
               <span class="category">Product</span>
               <h3>Migrating to Linear 101</h3>
@@ -184,12 +207,12 @@
   
       <!-- Center Buttons -->
       <div class="footer-center">
-        <button>Home</button>
-        <button>About Us</button>
-        <button>Projects</button>
-        <button>Services</button>
-        <button>Packages</button>
-        <button>Contact Us</button>
+        <a href="index.html"><button>Home</button></a>
+        <a href="about.html"><button>About Us</button></a>
+        <a href="projects.html"><button>Projects</button></a>
+        <a href="services.html"><button>Services</button></a>
+        <a href="packages.html"><button>Packages</button></a>
+        <a href="contact.html"><button>Contact Us</button></a>
       </div>
   
       <!-- Right Logo -->

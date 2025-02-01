@@ -17,7 +17,10 @@
 <body>
   <header>
     <div class="header-container">
+      <!-- Logo -->
       <div class="logo">OBT</div>
+  
+      <!-- Desktop Nav (shown on large screens, hidden on mobile) -->
       <nav class="nav-links">
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
@@ -25,12 +28,32 @@
         <a href="services.html">Services</a>
         <a href="packages.html">Packages</a>
       </nav>
+  
+      <!-- Contact Button -->
       <div class="header-button">
         <a href="contact.html">
           <button>Contact Us</button>
-      </a>      </div>
+        </a>
+      </div>
+  
+      <!-- Hamburger Icon (mobile only) -->
+      <div class="hamburger" id="hamburger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
   </header>
+  
+  <!-- Mobile Menu (slide-in) -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="close-btn" id="closeBtn">&times;</button>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="projects.html">Projects</a>
+    <a href="services.html">Services</a>
+    <a href="packages.html">Packages</a>
+  </div>
 
   <section class="services-hero">
     <div class="hero-content">
@@ -56,33 +79,33 @@
   
   <section class="services-features-section">
     <h2>Future-Ready Solutions We Build</h2>
-    <div class="features-grid">
-      <div class="feature-box">
+    <div class="services-features-grid">
+      <div class="services-feature-box">
         <i class="fas fa-headphones"></i>
         <h3>Intelligent Software Solutions </h3>
         <p>LTransform your vision into reality with innovative software tailored to elevate your business. Our solutions integrate cutting-edge technology with scalability for tomorrow’s challenges.</p>
       </div>
-      <div class="feature-box">
+      <div class="services-feature-box">
         <i class="fas fa-chart-line"></i>
         <h3>Immersive Web Experiences </h3>
         <p>Design and develop future-ready websites that captivate, engage, and deliver seamless user experiences. Your online presence will inspire trust and drive growth.</p>
       </div>
-      <div class="feature-box">
+      <div class="services-feature-box">
         <i class="fas fa-file-alt"></i>
         <h3>Next-Gen UI/UX Designs </h3>
         <p>Empower your brand with visually stunning and intuitive interfaces. Our designs blend creativity with functionality, ensuring your users stay engaged in every interaction.</p>
       </div>
-      <div class="feature-box">
+      <div class="services-feature-box">
         <i class="fas fa-box"></i>
         <h3>Smart Mobile Applications </h3>
         <p>Build powerful, futuristic apps that redefine mobility. From idea to execution, we develop apps that deliver exceptional user experiences on every device.</p>
       </div>
-      <div class="feature-box">
+      <div class="services-feature-box">
         <i class="fas fa-star"></i>
         <h3>Innovative Digital Consulting </h3>
         <p>Chart your path to success with expert advice. We guide you in adopting the latest trends and technologies, ensuring your business thrives in a competitive digital world.</p>
       </div>
-      <div class="feature-box">
+      <div class="services-feature-box">
         <i class="fas fa-sync-alt"></i>
         <h3>Revolutionary Product Development </h3>
         <p>Go beyond the ordinary with innovative products designed to solve real-world problems and create lasting impacts. Together, we’ll shape the future of technology.</p>
@@ -209,12 +232,12 @@
   
       <!-- Center Buttons -->
       <div class="footer-center">
-        <button>Home</button>
-        <button>About Us</button>
-        <button>Projects</button>
-        <button>Services</button>
-        <button>Packages</button>
-        <button>Contact Us</button>
+        <a href="index.html"><button>Home</button></a>
+        <a href="about.html"><button>About Us</button></a>
+        <a href="projects.html"><button>Projects</button></a>
+        <a href="services.html"><button>Services</button></a>
+        <a href="packages.html"><button>Packages</button></a>
+        <a href="contact.html"><button>Contact Us</button></a>
       </div>
   
       <!-- Right Logo -->

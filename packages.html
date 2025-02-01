@@ -17,7 +17,10 @@
 <body>
   <header>
     <div class="header-container">
+      <!-- Logo -->
       <div class="logo">OBT</div>
+  
+      <!-- Desktop Nav (shown on large screens, hidden on mobile) -->
       <nav class="nav-links">
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
@@ -25,12 +28,32 @@
         <a href="services.html">Services</a>
         <a href="packages.html">Packages</a>
       </nav>
+  
+      <!-- Contact Button -->
       <div class="header-button">
         <a href="contact.html">
           <button>Contact Us</button>
-      </a>      </div>
+        </a>
+      </div>
+  
+      <!-- Hamburger Icon (mobile only) -->
+      <div class="hamburger" id="hamburger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
   </header>
+  
+  <!-- Mobile Menu (slide-in) -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="close-btn" id="closeBtn">&times;</button>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="projects.html">Projects</a>
+    <a href="services.html">Services</a>
+    <a href="packages.html">Packages</a>
+  </div>
 
   <section class="pricing-section">
     <div class="pricing-header">
@@ -117,12 +140,12 @@
   
       <!-- Center Buttons -->
       <div class="footer-center">
-        <button>Home</button>
-        <button>About Us</button>
-        <button>Projects</button>
-        <button>Services</button>
-        <button>Packages</button>
-        <button>Contact Us</button>
+        <a href="index.html"><button>Home</button></a>
+        <a href="about.html"><button>About Us</button></a>
+        <a href="projects.html"><button>Projects</button></a>
+        <a href="services.html"><button>Services</button></a>
+        <a href="packages.html"><button>Packages</button></a>
+        <a href="contact.html"><button>Contact Us</button></a>
       </div>
   
       <!-- Right Logo -->
