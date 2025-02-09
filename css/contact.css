@@ -3,7 +3,7 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url('https://www.solarsystemscope.com/textures/download/2k_stars.jpg') repeat, #000;
+  background: #02191F;
   background-size: cover;
   background-attachment: fixed;  display: flex;
   justify-content: center;
@@ -30,7 +30,7 @@
   opacity: 0.3; /* Faint effect */
   z-index: 2; /* Ensure it's above the background but below other elements */
   top: 45%;
-  left: 48%;
+  left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   display: flex;
@@ -83,7 +83,7 @@
   .contact-section {
     padding: 6rem 0; /* Increase top and bottom padding */
     margin-top: 5rem; /* Adds extra space between hero section and contact section */
-    background: url('https://www.solarsystemscope.com/textures/download/2k_stars.jpg') repeat, #000;
+    background: #02191F;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -97,7 +97,7 @@
   }
   
   .contact-item {
-    background: #111;
+    background: #02191F;
     padding: 2rem;
     border-radius: 10px;
     transition: transform 0.3s ease;

@@ -35,7 +35,7 @@ html {
   }
   
   body {
-    background-color:  #000;
+    background-color:  #02191F;
     color: var(--primary-text);
     line-height: 1.6;
     cursor: none;
@@ -66,7 +66,7 @@ a, button, input, textarea {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: var(--primary-bg);
+    background-color: #02191F;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -115,7 +115,7 @@ a, button, input, textarea {
   
   
   .header-button button:hover {
-    background-color: black !important;
+    background-color: #02191F !important;
     color:  white!important;
     border: 0.3px solid white;
 
@@ -310,16 +310,18 @@ a, button, input, textarea {
   
   
   /* Info Section Styles */
-.info-section {
+  .info-section {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url('https://www.solarsystemscope.com/textures/download/2k_stars.jpg') repeat, #000;
+    background:  #02191F;
     padding: 4rem 2rem; /* Add spacing for section */
     color: #fff; /* White text */
     text-align: center;
-  }
+    position: relative; /* Ensure orbit animation stays within */
+    overflow: hidden; /* Prevent overflow from animations */
+}
   
   .info-container h2 {
     font-size: 2rem; /* Adjust as needed */
@@ -345,45 +347,12 @@ a, button, input, textarea {
     color: #000;
   }
 
-/* Orbit Animation Container */
-.orbit-animation {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  z-index: 1;
-  overflow: hidden; /* Ensure it does not overflow */
-}
-
-/* Orbit Path (Much Larger Arc) */
-.orbit-path {
-  position: absolute;
-  width: 1200px; /* Increased size */
-  height: 1200px;
-  border: 2px dashed rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
-  opacity: 0;
-  transform-origin: center;
-}
-
-/* Planet (Massive Size + Soft Glow) */
-.planet {
-  position: absolute;
-  width: 100px; /* Adjusted planet size */
-  height: 100px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0) 80%);
-  border-radius: 50%;
-  box-shadow: 0 0 30px rgba(255, 255, 255, 0.9);
-  opacity: 0;
-}
 
   
   /* Features Section Styles */
 .features-section {
     padding: 4rem 2rem;
-    background: url('https://www.solarsystemscope.com/textures/download/2k_stars.jpg') repeat, #000;
+    background:  #02191F;
     text-align: center;
     color: #fff;
   }
@@ -441,7 +410,7 @@ a, button, input, textarea {
     position: relative;
     width: 100%;
     overflow: hidden; /* Hide overflowing text */
-    background: url('https://www.solarsystemscope.com/textures/download/2k_stars.jpg') repeat, #000;
+    background:  #02191F;
   }
   
   .marquee {
@@ -472,7 +441,7 @@ a, button, input, textarea {
   /* Faq Section Styles */
 /* FAQ Section */
 .faq-section {
-  background: url('https://www.solarsystemscope.com/textures/download/2k_stars.jpg') repeat, #000;
+  background: #02191F;
   color: #fff;
   padding: 4rem 2rem;
   display: flex;
@@ -625,7 +594,7 @@ a, button, input, textarea {
   
 /* Latest Blogs Section */
 .latest-blogs {
-  background: url('https://www.solarsystemscope.com/textures/download/2k_stars.jpg') repeat, #000;
+  background: #02191F;
   color: #fff;
   padding: 5rem 2rem;
   text-align: center;
@@ -660,7 +629,7 @@ a, button, input, textarea {
 /* Blog Card */
 .blog-card {
   width: 30%; /* Equal width for three cards */
-  background: black;
+  background: #02191F;
   padding: 2rem;
   border-radius: 15px;
   display: flex;
@@ -733,7 +702,7 @@ a, button, input, textarea {
 
 /* Testimonials Section */
 .testimonials-section {
-  background: url('https://www.solarsystemscope.com/textures/download/2k_stars.jpg') repeat, #000;
+  background: #02191F;
   color: #fff;
   padding: 5rem 2rem;
   text-align: center;
@@ -769,7 +738,7 @@ a, button, input, textarea {
 /* Testimonial Card */
 .testimonial-card {
   width: 40%;
-  background: black;
+  background: #02191F;
   padding: 2rem;
   border-radius: 15px;
   display: flex;
@@ -832,8 +801,8 @@ a, button, input, textarea {
 
 /* Footer Section */
 .footer {
-  background-color: #fff; /* White background */
-  color: #000; /* Black text color */
+  background: #02191F;
+  color: #ffffff; /* Black text color */
   padding: 2rem;
   display: flex;
   align-items: center;
@@ -859,7 +828,7 @@ a, button, input, textarea {
 .footer-left i {
   font-size: 1.5rem;
   cursor: pointer;
-  color: #000; /* Black color for icons */
+  color: #ffffff; /* Black color for icons */
   transition: color 0.3s;
 }
 
@@ -874,65 +843,35 @@ a, button, input, textarea {
 
 .footer-center button {
   background: none;
-  color: #000; /* Black text */
+  color: #ffffff; /* White text */
   font-family: 'Astro Soft', sans-serif;
   font-size: 1rem;
-  border: 2px solid #000; /* Black border */
-  border-radius: 25px; /* Rounded button */
+  border: 2px solid #ffffff; /* White border */
+  border-radius: 0 0 20px 20px; /* Top corners: 0, Bottom corners: 20px */
   padding: 0.5rem 1rem; /* Add padding for buttons */
   cursor: pointer;
   display: flex;
   align-items: center;
   gap: 0.5rem;
   transition: all 0.3s ease-in-out;
-  border-radius: 0 0 20px 20px; /* Top corners: 0, Bottom corners: 10px */
-
+  text-decoration: none; /* Remove text underline */
 }
 
+
 .footer-center button:hover {
-  background-color: #000; /* Black background on hover */
-  color: #fff; /* White text on hover */
+  background-color: #fff; /* Black background on hover */
+  color: #000; /* White text on hover */
 }
 
 .footer-right h3 {
   font-family: 'Astro Soft', sans-serif;
   font-size: 1.5rem;
-  color: #000; /* Black text */
+  color: #ffffff; /* Black text */
   text-align: right;
 }
 
 
 
-/* Orbit Animation */
-.orbit-container {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  pointer-events: none; /* Prevent interactions */
-  overflow: hidden;
-  top: 0;
-  left: 0;
-}
-
-.orbit-path {
-  position: absolute;
-  width: 300px;
-  height: 2px;
-  background: rgba(255, 255, 255, 0.1); /* Faint orbit line */
-  border-radius: 50%;
-  opacity: 0;
-  transform-origin: center;
-}
-
-.planet {
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0) 70%);
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
-  opacity: 0;
-}
 
 @media only screen and (max-width: 480px) {
   /* Styles for extra small phones */

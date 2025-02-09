@@ -4,7 +4,7 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    background: url('https://www.solarsystemscope.com/textures/download/2k_stars.jpg') repeat, #000;
+    background: #02191F;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,7 +30,7 @@
     opacity: 0.3; /* Faint effect */
     z-index: 2; /* Ensure it's above the background but below other elements */
     top: 45%;
-    left: 48%;
+    left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     display: flex;
@@ -76,7 +76,7 @@
     /* Features Section Styles */
 .services-features-section {
     padding: 4rem 2rem;
-    background: url('https://www.solarsystemscope.com/textures/download/2k_stars.jpg') repeat, #000;
+    background: #02191F;
     text-align: center;
     color: #fff;
   }
@@ -133,7 +133,7 @@
   /* FAQ Section Styles */
 /* FAQ Section */
 .services-faq-section {
-  background: url('https://www.solarsystemscope.com/textures/download/2k_stars.jpg') repeat, #000;
+  background: #02191F;
   color: #fff;
   padding: 4rem 2rem;
   display: flex;
