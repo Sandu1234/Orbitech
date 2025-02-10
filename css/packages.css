@@ -8,13 +8,13 @@
   }
   
   .pricing-header h2 {
-    font-family: 'Astro Soft', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
   }
   
   .pricing-header p {
-    font-family: 'Astro Soft', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 1.2rem;
     color: #bbb;
     margin-bottom: 2rem;
@@ -44,20 +44,20 @@
   }
   
   .pricing-card h3 {
-    font-family: 'Astro Soft', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
   }
   
   .pricing-card p {
-    font-family: 'Astro Soft', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 1rem;
     color: #bbb;
     margin-bottom: 1.5rem;
   }
   
   .price h1 {
-    font-family: 'Astro Soft', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 3rem;
     margin: 0;
   }
@@ -74,7 +74,7 @@
     border-radius: 25px;
     padding: 0.5rem 1.5rem;
     font-size: 1rem;
-    font-family: 'Astro Soft', sans-serif;
+    font-family: 'Oswald', sans-serif;
     cursor: pointer;
     border-radius: 0 0 20px 20px; /* Top corners: 0, Bottom corners: 10px */
     margin: 1rem 0;
@@ -94,7 +94,7 @@
   }
   
   .features-list li {
-    font-family: 'Astro Soft', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 1rem;
     margin: 0.5rem 0;
     display: flex;
