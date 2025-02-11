@@ -135,3 +135,4 @@ hamburgerIcon.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
   mobileMenu.style.display = 'none';
 });
+

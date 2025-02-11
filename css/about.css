@@ -32,7 +32,7 @@
     -webkit-text-stroke: 2px #fff; /* White outline effect */
     opacity: 0.3; /* Faint effect */
     z-index: 2; /* Ensure it's above the background but below other elements */
-    top: 45%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -50,6 +50,21 @@
     -webkit-text-stroke: 2px #fff; /* White outline effect */
     opacity: 0.8; /* Ensure both have the same opacity */
 }
+
+/* Lightning Flash Effect */
+@keyframes lightning-flash {
+  0%, 50%, 100% { opacity: 1; } /* Full visibility at start, middle, and end */
+  5%, 55% { opacity: 0.2; }    /* Quick dimming */
+  10%, 40% { opacity: 0.8; }   /* Slight brightening */
+  20%, 60% { opacity: 0.4; }   /* Medium dimming */
+}
+
+/* Apply the animation to the main text and subtext */
+.orbitech-text .main-text,
+.orbitech-text .subtext {
+  animation: lightning-flash 0.5s ease-out forwards; /* Fast lightning effect */
+}
+
 
   
   .hero-image-container {

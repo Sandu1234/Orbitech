@@ -137,20 +137,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-document.addEventListener("DOMContentLoaded", () => {
-    gsap.from(".orbitech-text .main-text", {
-        y: 50,  // Moves up from 50px below
-        opacity: 0,
-        duration: 1.2,
-        ease: "power3.out"
-    });
 
-    gsap.from(".orbitech-text .subtext", {
-        y: 80, // Moves up from 80px below
-        opacity: 0,
-        duration: 1.5,
-        delay: 0.3,  // Starts slightly after the main text
-        ease: "power3.out"
-    });
-});
 
