@@ -769,7 +769,6 @@ a, button, input, textarea {
   justify-content: space-between;
   text-align: center;
   transition: all 0.5s ease-in-out;
-  border: 1px solid white;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   opacity: 0;
   transform: translateX(100%);
