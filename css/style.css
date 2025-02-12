@@ -384,6 +384,7 @@ a, button, input, textarea {
     font-size: 2.5rem;
     font-family: 'Oswald', sans-serif;
     margin-bottom: 2rem;
+    font-weight: 500;
   }
   
   .features-grid {
@@ -486,6 +487,7 @@ a, button, input, textarea {
   font-family: 'Oswald', sans-serif;
   margin-bottom: 1rem;
   text-align: center;
+  font-weight: 500;
 }
 
 .faq-content p {
@@ -493,6 +495,7 @@ a, button, input, textarea {
   font-family: 'Oswald', sans-serif;
   margin-bottom: 2rem;
   text-align: center;
+  font-weight: 100;
 }
 /* Two-Column Layout */
 .faq-columns {
@@ -534,12 +537,14 @@ a, button, input, textarea {
   font-size: 1.5rem;
   font-family: 'Oswald', sans-serif;
   margin-bottom: 0.5rem;
+  font-weight: 200;
 }
 
 .faq-text p {
   font-size: 1rem;
   line-height: 1.6;
-  color: #888;
+  color: #fff;
+  font-weight: 100;
 }
 
 /* Hover Effects */
@@ -548,7 +553,7 @@ a, button, input, textarea {
 }
 
 .faq-list li:hover .faq-text p {
-  color: #bbb;
+  color: #fff;
 }
 
 /* Responsive Design */
@@ -636,6 +641,7 @@ a, button, input, textarea {
   font-family: 'Oswald', sans-serif;
   opacity: 0.8;
   margin-bottom: 3rem;
+  font-weight: 100;
 }
 
 /* Modern Blogs Layout - Show all three cards */
@@ -671,7 +677,7 @@ a, button, input, textarea {
 /* Blog Content */
 .blog-content h3 {
   font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 1rem;
 }
 
@@ -679,6 +685,7 @@ a, button, input, textarea {
   font-size: 1rem;
   opacity: 0.9;
   margin-bottom: 1rem;
+  font-weight: 100;
 }
 
 /* Read More Button */
@@ -738,6 +745,7 @@ a, button, input, textarea {
   font-family: 'Oswald', sans-serif;
   font-weight: 500;
   margin-bottom: 1rem;
+  color: #fff !important;
 }
 
 .testimonials-header p {
@@ -745,6 +753,7 @@ a, button, input, textarea {
   font-family: 'Oswald', sans-serif;
   opacity: 0.8;
   margin-bottom: 3rem;
+  font-weight: 100;
 }
 
 /* Testimonials Carousel */

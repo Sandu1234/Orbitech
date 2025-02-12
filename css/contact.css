@@ -225,7 +225,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr; /* 2 columns */
       gap: 1.5rem;                   /* Slight gap between columns */
-      max-width: 700px;             /* Adjust as needed */
+      max-width: 500px;             /* Adjust as needed */
       margin: 0 auto;
     }
   

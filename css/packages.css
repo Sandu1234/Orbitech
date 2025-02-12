@@ -11,6 +11,7 @@
     font-family: 'Oswald', sans-serif;
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
+    font-weight: 500;
   }
   
   .pricing-header p {
@@ -18,6 +19,7 @@
     font-size: 1.2rem;
     color: #bbb;
     margin-bottom: 2rem;
+    font-weight: 100;
   }
   
   .pricing-container {
@@ -47,6 +49,7 @@
     font-family: 'Oswald', sans-serif;
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
+    font-weight: 300;
   }
   
   .pricing-card p {
@@ -54,6 +57,7 @@
     font-size: 1rem;
     color: #bbb;
     margin-bottom: 1.5rem;
+    font-weight: 100;
   }
   
   .price h1 {
@@ -99,6 +103,7 @@
     margin: 0.5rem 0;
     display: flex;
     align-items: center;
+    font-weight: 100;
   }
   
   .features-list li:before {
