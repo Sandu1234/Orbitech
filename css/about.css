@@ -2,17 +2,14 @@
   /* About Page Hero Section */
 /* About Page Hero Section */
 .about-hero {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: #02191F;
-    background-size: cover;
-    background-attachment: fixed;    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-  }
+  height: 60vh; /* Adjust the height based on your preference */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #02191F; /* Black theme */
+  color: #fff; /* White text for contrast */
+  position: relative;
+}
   
   .hero-content {
     position: relative;
@@ -32,14 +29,16 @@
     -webkit-text-stroke: 2px #fff; /* White outline effect */
     opacity: 0.3; /* Faint effect */
     z-index: 2; /* Ensure it's above the background but below other elements */
-    top: 40%;
+    top: 10% !important;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     display: flex;
     flex-direction: column; /* Stack text in two lines */
     line-height: 1.1; /* Reduce spacing between lines */
-}
+    padding-bottom: 50px; /* Adds space below the text */
+  }
+  
 
 /* Main text (ORBITECH) */
 .orbitech-text .main-text,
@@ -65,36 +64,9 @@
   animation: lightning-flash 0.5s ease-out forwards; /* Fast lightning effect */
 }
 
-
-  
-  .hero-image-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2; /* Place the image above the text */
-  }
-  
-  .circle {
-    position: absolute;
-    width: 600px;
-    height: 600px;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    z-index: 1; /* Behind the image but above the text */
-  }
-  
-  .about-hero .hero-image {
-    position: relative;
-    z-index: 2;
-    max-width: 600px;
-    height: auto;
-    top: 60% !important;
-  }
-  
   /* Stats Section */
 .stats-section {
-    background: linear-gradient(to bottom, #126170, #02191F); /* Add gradient background */
+    background: linear-gradient(to bottom, #03313b, #02191F); /* Add gradient background */
     color: #fff;
     padding: 2rem 0;
     text-align: center;
@@ -117,7 +89,7 @@
   .stat-item h1 {
     font-size: 3rem; /* Adjust number size */
     font-family: 'Oswald', sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     margin-bottom: 0.5rem;
   }
   
@@ -153,7 +125,7 @@
   .section-item h2 {
     font-size: 3rem;
     font-family: 'Oswald', sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     margin-bottom: 1rem;
   }
   
@@ -161,6 +133,7 @@
     font-size: 1.2rem;
     font-family: 'Oswald', sans-serif;
     line-height: 1.6;
+    font-weight: 100;
   }
 
     /* Features Section Styles */
@@ -220,11 +193,10 @@
   
 
   @media (max-width: 600px) {
-      .about-hero {
-        height: auto; 
-        background-attachment: scroll; 
-        padding-bottom: 2rem; 
-      }
+    .about-hero {
+      height: 30vh; /* Let the height adjust dynamically based on content */
+      padding-bottom: 1rem;
+    }
     
       .hero-content {
         padding-top: 2rem; 
@@ -248,24 +220,17 @@
         -webkit-text-stroke: 1px #fff; 
       }
     
-      .circle {
-        width: 300px; 
-        height: 300px; 
-      }
-    
-      .hero-image {
-        max-width: 250px;   
-        top: auto !important; 
-        transform: none;     
-        margin-top: 1rem;    
-      }
-    
       .social-icons {
         position: static; 
-        margin-top: 1rem;
+        margin-top: 4rem;
         flex-direction: row; 
         gap: 1rem; 
         justify-content: center;
+      }
+
+      .rotated-text {
+        font-size: 1.5rem;
+        right: 30px;
       }
       
     .stats-container {

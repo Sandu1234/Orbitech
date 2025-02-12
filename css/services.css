@@ -1,15 +1,13 @@
-  /* About Page Hero Section */
-/* About Page Hero Section */
+
 .services-hero {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: #02191F;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-  }
+  height: 60vh; /* Adjust the height based on your preference */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #02191F; /* Black theme */
+  color: #fff; /* White text for contrast */
+  position: relative;
+}
   
   .hero-content {
     position: relative;
@@ -19,7 +17,7 @@
     flex-direction: column;
     width: 100%;
   }
-  
+
   .orbitech-text {
     position: absolute;
     width: 100%; /* Ensures it spans full width */
@@ -29,14 +27,16 @@
     -webkit-text-stroke: 2px #fff; /* White outline effect */
     opacity: 0.3; /* Faint effect */
     z-index: 2; /* Ensure it's above the background but below other elements */
-    top: 45%;
+    top: 10% !important;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     display: flex;
     flex-direction: column; /* Stack text in two lines */
     line-height: 1.1; /* Reduce spacing between lines */
-}
+    padding-bottom: 50px; /* Adds space below the text */
+  }
+  
 
 /* Main text (ORBITECH) */
 .orbitech-text .main-text,
@@ -61,32 +61,6 @@
 .orbitech-text .subtext {
   animation: lightning-flash 0.5s ease-out forwards; /* Fast lightning effect */
 }
-
-  
-  .hero-image-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2; /* Place the image above the text */
-  }
-  
-  .circle {
-    position: absolute;
-    width: 600px;
-    height: 600px;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    z-index: 1; /* Behind the image but above the text */
-  }
-  
-  .services-hero .hero-image {
-    position: relative;
-    z-index: 2;
-    max-width: 600px;
-    height: auto;
-    top: 60% !important;
-  }
 
     /* Features Section Styles */
 .services-features-section {
@@ -205,7 +179,7 @@
 .faq-number {
   font-size: 2rem;
   font-family: 'Oswald', sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   margin-right: 1rem;
   transform: rotate(-90deg);
   color: #ffffff;
@@ -287,52 +261,53 @@
 
   @media (max-width: 600px) {
     .services-hero {
-      height: auto; 
-      background-attachment: scroll; 
-      padding-bottom: 2rem; 
+      height: 30vh; /* Let the height adjust dynamically based on content */
+      padding-bottom: 1rem;
     }
-  
-    .hero-content {
-      padding-top: 2rem; 
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-  
-    .orbitech-text {
-      top: 50%;         
-      left: 50%;
-      transform: translate(-50%, -30%); 
-      opacity: 0.5;      
-      width: 90%;       
-      line-height: 1;    
-    }
-  
-    .orbitech-text .main-text,
-    .orbitech-text .subtext {
-      font-size: 20vw;  
-      -webkit-text-stroke: 1px #fff; 
-    }
-  
-    .circle {
-      width: 300px; 
-      height: 300px; 
-    }
-  
-    .hero-image {
-      max-width: 250px;   
-      top: auto !important; 
-      transform: none;     
-      margin-top: 1rem;    
-    }
-  
-    .social-icons {
-      position: static; 
-      margin-top: 1rem;
-      flex-direction: row; 
-      gap: 1rem; 
-      justify-content: center;
-    }
+    
+      .hero-content {
+        padding-top: 2rem; 
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    
+      .orbitech-text {
+        top: 50%;         
+        left: 50%;
+        transform: translate(-50%, -30%); 
+        opacity: 0.5;      
+        width: 90%;       
+        line-height: 1;    
+      }
+    
+      .orbitech-text .main-text,
+      .orbitech-text .subtext {
+        font-size: 20vw;  
+        -webkit-text-stroke: 1px #fff; 
+      }
+    
+      .social-icons {
+        position: static; 
+        margin-top: 4rem;
+        flex-direction: row; 
+        gap: 1rem; 
+        justify-content: center;
+      }
+
+      .rotated-text {
+        font-size: 1.5rem;
+        right: 30px;
+      }
+
+      .services-features-grid {
+        display: grid;
+        grid-template-columns: 1fr; /* 2 columns */
+        gap: 1rem;
+        justify-items: center; /* Center items horizontally in their cells */
+        align-items: center;   /* Center items vertically in their cells */
+      }
+      
   }
 
   @media only screen and (min-width: 601px) and (max-width: 701px) {
